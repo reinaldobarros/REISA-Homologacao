@@ -1,0 +1,158 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "reisa_contasareceber.statecode_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reisa_contasareceber",
+			          "ConceptualProperty": "statecode_display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Contas a Receber": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "reisa_contasareceber.reisa_titulo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reisa_contasareceber",
+			          "ConceptualProperty": "reisa_titulo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Título": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "reisa_contasareceber.projeto_msdyn_subject": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reisa_contasareceber",
+			          "ConceptualProperty": "Projeto.msdyn_subject"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Projeto": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "reisa_contasareceber.account_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reisa_contasareceber",
+			          "ConceptualProperty": "Account.name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Cliente": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "reisa_contasapagar.reisa_statuspagamento_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reisa_contasapagar",
+			          "ConceptualProperty": "reisa_statuspagamento_display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Status Pagamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "reisa_contasapagar.account_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reisa_contasapagar",
+			          "ConceptualProperty": "Account.name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Fornecedor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "reisa_contasapagar.reisa_titulo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "reisa_contasapagar",
+			          "ConceptualProperty": "reisa_titulo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Título": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

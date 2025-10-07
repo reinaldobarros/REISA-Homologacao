@@ -1,0 +1,1792 @@
+table Account
+	lineageTag: b4539922-c85a-4a76-9321-86f25be854f5
+
+	column accountcategorycode
+		dataType: int64
+		formatString: 0
+		lineageTag: 02cb4f83-1ddf-4bf6-936f-dc70ba2b839d
+		summarizeBy: sum
+		sourceColumn: accountcategorycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountcategorycode_display
+		dataType: string
+		lineageTag: f72848ce-8e91-4ab9-9912-6bbcd57912e8
+		summarizeBy: none
+		sourceColumn: accountcategorycode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountclassificationcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 867b3337-94ea-466f-b213-e91493536e1a
+		summarizeBy: sum
+		sourceColumn: accountclassificationcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountclassificationcode_display
+		dataType: string
+		lineageTag: 781fede3-b0cb-401e-9604-985d4dd99bc3
+		summarizeBy: none
+		sourceColumn: accountclassificationcode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountid
+		dataType: string
+		lineageTag: 3cfc1422-d94a-44f0-9e18-9ea4e3c0973a
+		summarizeBy: none
+		sourceColumn: accountid
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountnumber
+		dataType: string
+		lineageTag: 665fda86-15ce-46bd-968c-d98ee312a8d1
+		summarizeBy: none
+		sourceColumn: accountnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountratingcode
+		dataType: int64
+		formatString: 0
+		lineageTag: bd741f42-2201-456a-8e6a-5150b382c46b
+		summarizeBy: sum
+		sourceColumn: accountratingcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountratingcode_display
+		dataType: string
+		lineageTag: 4cf4b080-e7cd-4c27-9086-d3f5f2a8595b
+		summarizeBy: none
+		sourceColumn: accountratingcode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_addressid
+		dataType: string
+		lineageTag: 2b262b3e-ffa2-4309-8fdc-39e088ab48c5
+		summarizeBy: none
+		sourceColumn: address1_addressid
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_addresstypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a7f9b08-dfce-4ef6-8f09-95cf7aaf09bf
+		summarizeBy: sum
+		sourceColumn: address1_addresstypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_addresstypecode_display
+		dataType: string
+		lineageTag: a49f8b85-1914-43c5-8bb2-985ec0aea72f
+		summarizeBy: none
+		sourceColumn: address1_addresstypecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_city
+		dataType: string
+		lineageTag: 3a6f2d0f-997f-4dbb-ae16-8e167aeef6a4
+		summarizeBy: none
+		sourceColumn: address1_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_composite
+		dataType: string
+		lineageTag: c166e10b-efc6-4b05-8b78-d6c0ea447623
+		summarizeBy: none
+		sourceColumn: address1_composite
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_country
+		dataType: string
+		lineageTag: ef9cabb8-070c-46dd-bdae-ec5ca4659863
+		summarizeBy: none
+		sourceColumn: address1_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_county
+		dataType: string
+		lineageTag: e4c85449-710c-42b0-9873-7d3aad9f2ec6
+		summarizeBy: none
+		sourceColumn: address1_county
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_fax
+		dataType: string
+		lineageTag: bca53c35-115a-4f48-8d17-62b799b55a1c
+		summarizeBy: none
+		sourceColumn: address1_fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_freighttermscode
+		dataType: int64
+		formatString: 0
+		lineageTag: bfbb91fb-1ce6-4af7-ab32-4c9412fc5c0b
+		summarizeBy: sum
+		sourceColumn: address1_freighttermscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_freighttermscode_display
+		dataType: string
+		lineageTag: 80a4dbce-dc33-4dca-8730-78bb6cbfc809
+		summarizeBy: none
+		sourceColumn: address1_freighttermscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_latitude
+		dataType: double
+		lineageTag: aaca65ea-ee16-4d57-ae84-0df0fda1fada
+		summarizeBy: sum
+		sourceColumn: address1_latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column address1_line1
+		dataType: string
+		lineageTag: 6887c213-99a5-4d3b-9ca3-fa7ec9860bc7
+		summarizeBy: none
+		sourceColumn: address1_line1
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_line2
+		dataType: string
+		lineageTag: f2231ede-efa9-41e9-9aa3-2c41861d2dab
+		summarizeBy: none
+		sourceColumn: address1_line2
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_line3
+		dataType: string
+		lineageTag: bb89ce6f-6b62-4ab7-8d02-0c0c76722cae
+		summarizeBy: none
+		sourceColumn: address1_line3
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_longitude
+		dataType: double
+		lineageTag: a5ec447f-1194-4252-b58d-0ad0c32d76e0
+		summarizeBy: sum
+		sourceColumn: address1_longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column address1_name
+		dataType: string
+		lineageTag: ced7e591-f368-4c1f-8b91-321e81af3fd2
+		summarizeBy: none
+		sourceColumn: address1_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_postalcode
+		dataType: string
+		lineageTag: 1eb37773-d035-4f26-9e2d-0c7540db9c5c
+		summarizeBy: none
+		sourceColumn: address1_postalcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_postofficebox
+		dataType: string
+		lineageTag: 44c65640-e81b-41c7-964d-7c4e6d7046f4
+		summarizeBy: none
+		sourceColumn: address1_postofficebox
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_primarycontactname
+		dataType: string
+		lineageTag: 24b87504-e43c-4abe-a3cb-533a57fc2304
+		summarizeBy: none
+		sourceColumn: address1_primarycontactname
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_shippingmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 7451af98-003b-4b46-a158-118febc4bb1a
+		summarizeBy: sum
+		sourceColumn: address1_shippingmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_shippingmethodcode_display
+		dataType: string
+		lineageTag: 4c0f4f89-cea6-4aa2-add9-4eac5e62d8bf
+		summarizeBy: none
+		sourceColumn: address1_shippingmethodcode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_stateorprovince
+		dataType: string
+		lineageTag: 9b7b8ce2-0639-48e0-a2a3-93b053615a51
+		summarizeBy: none
+		sourceColumn: address1_stateorprovince
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_telephone1
+		dataType: string
+		lineageTag: 83d7ede8-6d20-455e-9574-9e00c04a98a3
+		summarizeBy: none
+		sourceColumn: address1_telephone1
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_telephone2
+		dataType: string
+		lineageTag: 912cbf77-5b92-49af-990d-4e2c0e793f9e
+		summarizeBy: none
+		sourceColumn: address1_telephone2
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_telephone3
+		dataType: string
+		lineageTag: 49853d33-11a5-4901-8db7-c77950982a4d
+		summarizeBy: none
+		sourceColumn: address1_telephone3
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_upszone
+		dataType: string
+		lineageTag: 46a21b4f-1e93-482d-8c98-11e3594a1838
+		summarizeBy: none
+		sourceColumn: address1_upszone
+
+		annotation SummarizationSetBy = Automatic
+
+	column address1_utcoffset
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f34fc4b-ea5b-4f68-9c25-bf287d710809
+		summarizeBy: sum
+		sourceColumn: address1_utcoffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_addressid
+		dataType: string
+		lineageTag: b2eaef5d-65fe-4b7e-af89-3b9167faa6b8
+		summarizeBy: none
+		sourceColumn: address2_addressid
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_addresstypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: b0d31f1f-e071-490a-9fdb-72535cdd3af2
+		summarizeBy: sum
+		sourceColumn: address2_addresstypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_addresstypecode_display
+		dataType: string
+		lineageTag: 47040c35-10c8-42a6-8760-52d70dcc55b7
+		summarizeBy: none
+		sourceColumn: address2_addresstypecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_city
+		dataType: string
+		lineageTag: dd7f59ca-afd8-4b2a-bb67-1845525c6867
+		summarizeBy: none
+		sourceColumn: address2_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_composite
+		dataType: string
+		lineageTag: be06645f-2e12-4816-b8c1-6cd17597c7ab
+		summarizeBy: none
+		sourceColumn: address2_composite
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_country
+		dataType: string
+		lineageTag: 53f30f93-3b48-4847-a2aa-4f0ea99cae3b
+		summarizeBy: none
+		sourceColumn: address2_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_county
+		dataType: string
+		lineageTag: d4077b43-e2f0-4dad-abf9-fd0f694cf887
+		summarizeBy: none
+		sourceColumn: address2_county
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_fax
+		dataType: string
+		lineageTag: 22855fc6-69a7-4c0b-abcc-43b09459b185
+		summarizeBy: none
+		sourceColumn: address2_fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_freighttermscode
+		dataType: int64
+		formatString: 0
+		lineageTag: bbf31bc8-46d0-47d7-8693-bf29a8ccc3e6
+		summarizeBy: sum
+		sourceColumn: address2_freighttermscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_freighttermscode_display
+		dataType: string
+		lineageTag: 82dcd4ff-407c-4af9-8c99-5ec44ce24cf6
+		summarizeBy: none
+		sourceColumn: address2_freighttermscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_latitude
+		dataType: double
+		lineageTag: fec63e11-706a-42a0-a032-40953d9bc378
+		summarizeBy: sum
+		sourceColumn: address2_latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column address2_line1
+		dataType: string
+		lineageTag: 518bb848-51b1-49aa-b8a3-830ecd8a8e8d
+		summarizeBy: none
+		sourceColumn: address2_line1
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_line2
+		dataType: string
+		lineageTag: dac6825c-cd5e-4e37-803b-931203e3838a
+		summarizeBy: none
+		sourceColumn: address2_line2
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_line3
+		dataType: string
+		lineageTag: 5794b8f4-9ae6-4650-bb7a-28d97b6f0f97
+		summarizeBy: none
+		sourceColumn: address2_line3
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_longitude
+		dataType: double
+		lineageTag: cd219d41-b122-4a30-b65e-8a393fa33ed1
+		summarizeBy: sum
+		sourceColumn: address2_longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column address2_name
+		dataType: string
+		lineageTag: 621edd8e-fbef-4f9e-8958-ebb60ee4efd1
+		summarizeBy: none
+		sourceColumn: address2_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_postalcode
+		dataType: string
+		lineageTag: b4bc2539-8d5a-4a1e-b6ac-357d84491166
+		summarizeBy: none
+		sourceColumn: address2_postalcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_postofficebox
+		dataType: string
+		lineageTag: ce2addab-60e6-404b-b1c4-d2ef0ce7148c
+		summarizeBy: none
+		sourceColumn: address2_postofficebox
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_primarycontactname
+		dataType: string
+		lineageTag: e3264b22-2013-40b8-be78-20eadc585f43
+		summarizeBy: none
+		sourceColumn: address2_primarycontactname
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_shippingmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: fb9ea6f4-ceea-404e-b580-8ab254a4353d
+		summarizeBy: sum
+		sourceColumn: address2_shippingmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_shippingmethodcode_display
+		dataType: string
+		lineageTag: 76dee28d-fe46-40b6-8754-a6fc44ec5ed2
+		summarizeBy: none
+		sourceColumn: address2_shippingmethodcode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_stateorprovince
+		dataType: string
+		lineageTag: 7407817f-e2e1-4124-b4e2-02e2af0f4b7d
+		summarizeBy: none
+		sourceColumn: address2_stateorprovince
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_telephone1
+		dataType: string
+		lineageTag: 605db07a-3239-45a8-a9b8-6e024a28e029
+		summarizeBy: none
+		sourceColumn: address2_telephone1
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_telephone2
+		dataType: string
+		lineageTag: 1fe194c3-9d1a-459c-ae81-d6c525fababf
+		summarizeBy: none
+		sourceColumn: address2_telephone2
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_telephone3
+		dataType: string
+		lineageTag: b50ae845-f1bb-40cc-8b92-27701e4a2237
+		summarizeBy: none
+		sourceColumn: address2_telephone3
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_upszone
+		dataType: string
+		lineageTag: 4f6a070d-9a5c-4a5a-8639-133953b2cd09
+		summarizeBy: none
+		sourceColumn: address2_upszone
+
+		annotation SummarizationSetBy = Automatic
+
+	column address2_utcoffset
+		dataType: int64
+		formatString: 0
+		lineageTag: 920ee319-8ad4-4f88-83bf-1704f9016875
+		summarizeBy: sum
+		sourceColumn: address2_utcoffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column adx_createdbyipaddress
+		dataType: string
+		lineageTag: 58ee2bae-fa19-4977-9b16-72e601d24b73
+		summarizeBy: none
+		sourceColumn: adx_createdbyipaddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column adx_createdbyusername
+		dataType: string
+		lineageTag: c891c9dd-5606-4cda-9d4e-319b2ff29065
+		summarizeBy: none
+		sourceColumn: adx_createdbyusername
+
+		annotation SummarizationSetBy = Automatic
+
+	column adx_modifiedbyipaddress
+		dataType: string
+		lineageTag: 194f9532-cf29-40e5-8d30-6305b19bc314
+		summarizeBy: none
+		sourceColumn: adx_modifiedbyipaddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column adx_modifiedbyusername
+		dataType: string
+		lineageTag: 4cf9a89f-6e9d-4478-99ad-be5bd823ba03
+		summarizeBy: none
+		sourceColumn: adx_modifiedbyusername
+
+		annotation SummarizationSetBy = Automatic
+
+	column aging30
+		dataType: double
+		lineageTag: d1827ea5-0b00-4ee7-b960-99b13910f7c9
+		summarizeBy: sum
+		sourceColumn: aging30
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aging30_base
+		dataType: double
+		lineageTag: e6c9446b-366e-4442-aa9c-64c5b8d9d1e4
+		summarizeBy: sum
+		sourceColumn: aging30_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aging60
+		dataType: double
+		lineageTag: bccca9dd-624d-415c-b59e-a6d67d5b8976
+		summarizeBy: sum
+		sourceColumn: aging60
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aging60_base
+		dataType: double
+		lineageTag: 5927430b-cac5-4013-a99a-193fc0fc7f73
+		summarizeBy: sum
+		sourceColumn: aging60_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aging90
+		dataType: double
+		lineageTag: f15256e7-0902-4207-a5bf-74323a10de90
+		summarizeBy: sum
+		sourceColumn: aging90
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aging90_base
+		dataType: double
+		lineageTag: 257a8f88-cc5f-4d53-90c5-e79f0ec56fc2
+		summarizeBy: sum
+		sourceColumn: aging90_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column businesstypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: fc7195fb-02c6-4709-b45d-c9768da4f0a8
+		summarizeBy: sum
+		sourceColumn: businesstypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column businesstypecode_display
+		dataType: string
+		lineageTag: 270f74f1-3cde-430c-b585-46fd2040aec6
+		summarizeBy: none
+		sourceColumn: businesstypecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdby
+		dataType: string
+		lineageTag: a034ed7f-4ccc-454a-9ef3-d0ecca8a0691
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdbyexternalparty
+		dataType: string
+		lineageTag: 6c45061a-a719-420e-9637-45538fe58f6f
+		summarizeBy: none
+		sourceColumn: createdbyexternalparty
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 031ea1a8-b388-4c43-8658-62da4e6f60de
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: a061639b-8b5a-4ac1-aa78-d3f1f63c9f6c
+			defaultHierarchy: LocalDateTable_9b1bb1ed-7e59-4451-ab4f-1a4e147f364e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: e0ef8eea-7468-4660-ac1c-479a0015e77d
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column creditlimit
+		dataType: double
+		lineageTag: cc0a9bd9-a242-4c7b-8a9c-de0c0e215779
+		summarizeBy: sum
+		sourceColumn: creditlimit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creditlimit_base
+		dataType: double
+		lineageTag: 13c4a5e8-a8be-48b5-a40e-4023ce09adbe
+		summarizeBy: sum
+		sourceColumn: creditlimit_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column creditonhold
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ba970939-fd7a-4071-bd46-4db3385b64a0
+		summarizeBy: none
+		sourceColumn: creditonhold
+
+		annotation SummarizationSetBy = Automatic
+
+	column customersizecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ee92f24-c697-4c85-bc08-26d416b32ea5
+		summarizeBy: sum
+		sourceColumn: customersizecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column customersizecode_display
+		dataType: string
+		lineageTag: a40665ea-c350-4fae-b607-8b9e4a0d810c
+		summarizeBy: none
+		sourceColumn: customersizecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column customertypecode
+		dataType: int64
+		formatString: 0
+		lineageTag: d824c1f2-64ab-4779-ae9f-7406f323c260
+		summarizeBy: sum
+		sourceColumn: customertypecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column customertypecode_display
+		dataType: string
+		lineageTag: 489ef67a-da79-410d-a6ca-ce07d035dd48
+		summarizeBy: none
+		sourceColumn: customertypecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column defaultpricelevelid
+		dataType: string
+		lineageTag: cc0d7579-e56b-4898-b83b-6e53d24a0540
+		summarizeBy: none
+		sourceColumn: defaultpricelevelid
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: 56039023-6c86-4ffd-8d98-2199d2b671e6
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotbulkemail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 43b4e777-105d-48cd-893d-572a2bed8fe1
+		summarizeBy: none
+		sourceColumn: donotbulkemail
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotbulkpostalmail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: a7cd1128-737d-41b7-9d04-4e84aec48d25
+		summarizeBy: none
+		sourceColumn: donotbulkpostalmail
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotemail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f4f9ec5f-7c22-427d-9481-5bd21f811685
+		summarizeBy: none
+		sourceColumn: donotemail
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotfax
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d974a4ba-9226-442e-b91a-523458e13347
+		summarizeBy: none
+		sourceColumn: donotfax
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotphone
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3036a899-21ce-4731-9bb9-3db9683dc754
+		summarizeBy: none
+		sourceColumn: donotphone
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotpostalmail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8e29c1fb-692b-411f-82aa-e1c5717ab549
+		summarizeBy: none
+		sourceColumn: donotpostalmail
+
+		annotation SummarizationSetBy = Automatic
+
+	column donotsendmm
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d7f597cf-d8f3-4740-8835-7782c7e8c992
+		summarizeBy: none
+		sourceColumn: donotsendmm
+
+		annotation SummarizationSetBy = Automatic
+
+	column emailaddress1
+		dataType: string
+		lineageTag: 0d9f0e97-7c7e-4f0b-add6-2d0cdf169151
+		summarizeBy: none
+		sourceColumn: emailaddress1
+
+		annotation SummarizationSetBy = Automatic
+
+	column emailaddress2
+		dataType: string
+		lineageTag: 1d3210ff-3312-42d9-bde1-f3bde7660da2
+		summarizeBy: none
+		sourceColumn: emailaddress2
+
+		annotation SummarizationSetBy = Automatic
+
+	column emailaddress3
+		dataType: string
+		lineageTag: 092dfee9-6e46-4ee9-ae75-99be858966ec
+		summarizeBy: none
+		sourceColumn: emailaddress3
+
+		annotation SummarizationSetBy = Automatic
+
+	column entityimage_timestamp
+		dataType: int64
+		formatString: 0
+		lineageTag: 52a7bd9a-e13f-4208-9d8e-7e83da8d8f92
+		summarizeBy: sum
+		sourceColumn: entityimage_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column entityimage_url
+		dataType: string
+		lineageTag: 5cf8a544-2068-4bb2-97d1-0943ce60f2f6
+		summarizeBy: none
+		sourceColumn: entityimage_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column entityimageid
+		dataType: string
+		lineageTag: 1ad524a5-3915-4692-aa84-72c9beaed439
+		summarizeBy: none
+		sourceColumn: entityimageid
+
+		annotation SummarizationSetBy = Automatic
+
+	column exchangerate
+		dataType: double
+		lineageTag: b6264a38-3b76-4e40-bfcc-3cdfe63aec9c
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fax
+		dataType: string
+		lineageTag: 45ed3a09-b0ea-4c8e-b780-b378d47f3b70
+		summarizeBy: none
+		sourceColumn: fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column followemail
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: eebc453c-5b20-4c90-b055-0f9217254978
+		summarizeBy: none
+		sourceColumn: followemail
+
+		annotation SummarizationSetBy = Automatic
+
+	column ftpsiteurl
+		dataType: string
+		lineageTag: 8ef3762a-7d42-40ca-b952-908dac54733d
+		summarizeBy: none
+		sourceColumn: ftpsiteurl
+
+		annotation SummarizationSetBy = Automatic
+
+	column importsequencenumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 31f7947b-7234-42e5-b31d-9aef8ca7fe96
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column industrycode
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c7209fa-717f-4418-a9f7-d4dc864dc38f
+		summarizeBy: sum
+		sourceColumn: industrycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column industrycode_display
+		dataType: string
+		lineageTag: 709a9c18-f63f-44d9-8b62-2e5cb3e45307
+		summarizeBy: none
+		sourceColumn: industrycode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column lastonholdtime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7233d060-60ba-4aeb-94be-d435f02fb9f0
+		summarizeBy: none
+		sourceColumn: lastonholdtime
+
+		variation Variation
+			isDefault
+			relationship: 8e3676ca-387f-47e8-9386-36b6660ee009
+			defaultHierarchy: LocalDateTable_3fef4d68-0459-443f-a87e-8ff5edb4b7fc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column lastusedincampaign
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c8b66b93-b063-4822-8781-a93b26e55613
+		summarizeBy: none
+		sourceColumn: lastusedincampaign
+
+		variation Variation
+			isDefault
+			relationship: 23a32335-96ea-4e74-9bb1-6e91f01ae5a7
+			defaultHierarchy: LocalDateTable_a344e915-5213-4bb4-8d19-a4558876eb25.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column marketcap
+		dataType: double
+		lineageTag: 589db95e-2bb2-4fb7-85e4-6eb4888ae557
+		summarizeBy: sum
+		sourceColumn: marketcap
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column marketcap_base
+		dataType: double
+		lineageTag: 8aae72cd-dff1-41b2-a522-45168dbb7cfa
+		summarizeBy: sum
+		sourceColumn: marketcap_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column marketingonly
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: a8a1bc72-f4f0-41ef-b4a5-ad34c54139ad
+		summarizeBy: none
+		sourceColumn: marketingonly
+
+		annotation SummarizationSetBy = Automatic
+
+	column masterid
+		dataType: string
+		lineageTag: a6a2592c-c5d2-4697-b3c7-153e1fa87300
+		summarizeBy: none
+		sourceColumn: masterid
+
+		annotation SummarizationSetBy = Automatic
+
+	column merged
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 87ecffde-c6c0-40ce-a274-c0a3a0f0302c
+		summarizeBy: none
+		sourceColumn: merged
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: 00fa24a7-0fd4-46d9-a0e8-e9f1e39996e9
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedbyexternalparty
+		dataType: string
+		lineageTag: 73ce8346-86d1-458c-9f47-80a3b0c118bb
+		summarizeBy: none
+		sourceColumn: modifiedbyexternalparty
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 22a665a2-eabf-4297-8b90-ff8549d42d9c
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: dcc15324-848e-41fd-b87f-60a8d70e7544
+			defaultHierarchy: LocalDateTable_caa6a3e1-8b7a-493d-8b24-3b246f6e677d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: 589ea3b8-42fd-4d01-b786-6f1d7b5cac34
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column ms_newsandsocialid
+		dataType: string
+		lineageTag: 234d8d20-61e8-487d-bebb-b5cb1cc7774f
+		summarizeBy: none
+		sourceColumn: ms_newsandsocialid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ms_traceid
+		dataType: string
+		lineageTag: 8ba809e6-8b76-4c73-b3f8-13a49334e743
+		summarizeBy: none
+		sourceColumn: ms_traceid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ms_tweetsaboutdate
+		dataType: string
+		lineageTag: 1f48e49e-ae87-4863-be2f-fff32bc3921b
+		summarizeBy: none
+		sourceColumn: ms_tweetsaboutdate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ms_tweetsfromdate
+		dataType: string
+		lineageTag: 79e66f07-af59-4f47-9bce-5c0ef80d3271
+		summarizeBy: none
+		sourceColumn: ms_tweetsfromdate
+
+		annotation SummarizationSetBy = Automatic
+
+	column msa_managingpartnerid
+		dataType: string
+		lineageTag: 11022dd3-4fdd-4a76-9a13-0fd6041c5a17
+		summarizeBy: none
+		sourceColumn: msa_managingpartnerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_billingaccount
+		dataType: string
+		lineageTag: 36fd320d-df0e-4efa-8e32-9b5fa1e965f1
+		summarizeBy: none
+		sourceColumn: msdyn_billingaccount
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_externalaccountid
+		dataType: string
+		lineageTag: 9efbe295-0a7a-4cef-b8ca-0c4e982eaced
+		summarizeBy: none
+		sourceColumn: msdyn_externalaccountid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_preferredresource
+		dataType: string
+		lineageTag: f9fefb88-2f10-49aa-a94b-0d0a93292047
+		summarizeBy: none
+		sourceColumn: msdyn_preferredresource
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_salestaxcode
+		dataType: string
+		lineageTag: d2854150-b263-45fc-9b37-14ebeec0e3bd
+		summarizeBy: none
+		sourceColumn: msdyn_salestaxcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_serviceterritory
+		dataType: string
+		lineageTag: 556c4de1-3c7f-4d4f-b771-6f00c5ef50a9
+		summarizeBy: none
+		sourceColumn: msdyn_serviceterritory
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_taxexempt
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c03d37a7-6b1c-46e7-8ec7-1ca54c0e5624
+		summarizeBy: none
+		sourceColumn: msdyn_taxexempt
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_taxexemptnumber
+		dataType: string
+		lineageTag: f1a2a9a9-9545-4f62-9336-9342b7333b92
+		summarizeBy: none
+		sourceColumn: msdyn_taxexemptnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_travelcharge
+		dataType: double
+		lineageTag: 013918ce-c009-44ab-a927-4f19991426f8
+		summarizeBy: sum
+		sourceColumn: msdyn_travelcharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_travelcharge_base
+		dataType: double
+		lineageTag: 68f232d3-a573-428e-a3f4-ae9258e4e56c
+		summarizeBy: sum
+		sourceColumn: msdyn_travelcharge_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_travelchargetype
+		dataType: int64
+		formatString: 0
+		lineageTag: 27d8d990-51fa-4510-a8f7-727c51dc47fa
+		summarizeBy: sum
+		sourceColumn: msdyn_travelchargetype
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_travelchargetype_display
+		dataType: string
+		lineageTag: d6b5a55f-ab50-4756-9a4e-3df2eee7f854
+		summarizeBy: none
+		sourceColumn: msdyn_travelchargetype_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_workorderinstructions
+		dataType: string
+		lineageTag: dd1f5483-96cc-424b-80c9-4434832a2921
+		summarizeBy: none
+		sourceColumn: msdyn_workorderinstructions
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 51f6e841-c5bc-4849-a968-0d440f976cd7
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column numberofemployees
+		dataType: int64
+		formatString: 0
+		lineageTag: 96cdf711-3672-4e3c-b581-14874932d461
+		summarizeBy: sum
+		sourceColumn: numberofemployees
+
+		annotation SummarizationSetBy = Automatic
+
+	column onholdtime
+		dataType: int64
+		formatString: 0
+		lineageTag: 95ba7919-6403-42f9-9faf-852583b370bf
+		summarizeBy: sum
+		sourceColumn: onholdtime
+
+		annotation SummarizationSetBy = Automatic
+
+	column opendeals
+		dataType: int64
+		formatString: 0
+		lineageTag: 4575ccbc-29c4-42f4-9167-ffda24745daf
+		summarizeBy: sum
+		sourceColumn: opendeals
+
+		annotation SummarizationSetBy = Automatic
+
+	column opendeals_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9dee5bac-68ba-4533-a92a-cc4da5068509
+		summarizeBy: none
+		sourceColumn: opendeals_date
+
+		variation Variation
+			isDefault
+			relationship: 7d8c744c-71fb-4f2d-a9ee-d9d24b8d6296
+			defaultHierarchy: LocalDateTable_3a6a15df-e0db-4769-b8ab-69043dd305c5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column opendeals_state
+		dataType: int64
+		formatString: 0
+		lineageTag: b35f119f-4a80-4adc-af71-3dfec05b7545
+		summarizeBy: sum
+		sourceColumn: opendeals_state
+
+		annotation SummarizationSetBy = Automatic
+
+	column openrevenue
+		dataType: double
+		lineageTag: c5b2954d-0574-4f4f-915b-1ad431c90a0c
+		summarizeBy: sum
+		sourceColumn: openrevenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column openrevenue_base
+		dataType: double
+		lineageTag: 398254bb-7eb8-44e0-bf90-cf21f5b31723
+		summarizeBy: sum
+		sourceColumn: openrevenue_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column openrevenue_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 70c2a22f-f36c-4402-861e-083fdced0aa2
+		summarizeBy: none
+		sourceColumn: openrevenue_date
+
+		variation Variation
+			isDefault
+			relationship: 276eb1ad-c513-44a4-b9b6-1702ff947dba
+			defaultHierarchy: LocalDateTable_75f44e40-9514-43c8-8c6f-4b084a688c87.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column openrevenue_state
+		dataType: int64
+		formatString: 0
+		lineageTag: 9bf782f8-5222-4c4b-9a55-4e74a76e3174
+		summarizeBy: sum
+		sourceColumn: openrevenue_state
+
+		annotation SummarizationSetBy = Automatic
+
+	column originatingleadid
+		dataType: string
+		lineageTag: 0148a0b2-816b-43be-b08d-f817d8c0466c
+		summarizeBy: none
+		sourceColumn: originatingleadid
+
+		annotation SummarizationSetBy = Automatic
+
+	column overriddencreatedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 594f50d6-4297-4c27-a3d3-9ed00a60a64d
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: 49b98540-4897-4d09-93da-6f550c1a68d8
+			defaultHierarchy: LocalDateTable_3e22bcbf-5f72-4fd8-b1a5-a84aa8a12d7c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownerid
+		dataType: string
+		lineageTag: 83dba1a6-2739-474f-b492-5b73acac9a77
+		summarizeBy: none
+		sourceColumn: ownerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownershipcode
+		dataType: int64
+		formatString: 0
+		lineageTag: d8144829-d354-47a8-a1da-bda5346cfdc1
+		summarizeBy: sum
+		sourceColumn: ownershipcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownershipcode_display
+		dataType: string
+		lineageTag: 20eae18a-3658-42e3-b3e2-bf03177b08bb
+		summarizeBy: none
+		sourceColumn: ownershipcode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningbusinessunit
+		dataType: string
+		lineageTag: 3c20685f-b78c-4efa-92ed-d90d1fa4c46e
+		summarizeBy: none
+		sourceColumn: owningbusinessunit
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningteam
+		dataType: string
+		lineageTag: 1116dda8-5688-4dd5-8615-43dc8aaf1cd2
+		summarizeBy: none
+		sourceColumn: owningteam
+
+		annotation SummarizationSetBy = Automatic
+
+	column owninguser
+		dataType: string
+		lineageTag: d4b26300-1dbf-4642-81ef-8922252c3cf0
+		summarizeBy: none
+		sourceColumn: owninguser
+
+		annotation SummarizationSetBy = Automatic
+
+	column parentaccountid
+		dataType: string
+		lineageTag: 337f2a8e-e022-469d-bb1e-000885aa822e
+		summarizeBy: none
+		sourceColumn: parentaccountid
+
+		annotation SummarizationSetBy = Automatic
+
+	column participatesinworkflow
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7c848a55-9d97-4767-806d-86910bc1ff42
+		summarizeBy: none
+		sourceColumn: participatesinworkflow
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymenttermscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 27c4cfd7-4152-4062-89c7-bd25be8f9d5a
+		summarizeBy: sum
+		sourceColumn: paymenttermscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymenttermscode_display
+		dataType: string
+		lineageTag: 739b4efc-103c-4c49-9c9a-5a4c54b27329
+		summarizeBy: none
+		sourceColumn: paymenttermscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredappointmentdaycode
+		dataType: int64
+		formatString: 0
+		lineageTag: f2ad195d-9350-4cd5-9e74-27ced1365bc9
+		summarizeBy: sum
+		sourceColumn: preferredappointmentdaycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredappointmentdaycode_display
+		dataType: string
+		lineageTag: 9027a282-a81b-4f5c-b6b1-1123b33e1e1f
+		summarizeBy: none
+		sourceColumn: preferredappointmentdaycode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredappointmenttimecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 488f80a3-a114-44be-99e8-8f17c7d81550
+		summarizeBy: sum
+		sourceColumn: preferredappointmenttimecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredappointmenttimecode_display
+		dataType: string
+		lineageTag: 968ebf44-f1ed-4dcb-a7a4-f8263030968b
+		summarizeBy: none
+		sourceColumn: preferredappointmenttimecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredcontactmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c5f0b81-c2f6-4538-b66c-5d96e19e4786
+		summarizeBy: sum
+		sourceColumn: preferredcontactmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredcontactmethodcode_display
+		dataType: string
+		lineageTag: 6c420475-78c2-4b60-b08a-8bc10064b2de
+		summarizeBy: none
+		sourceColumn: preferredcontactmethodcode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredequipmentid
+		dataType: string
+		lineageTag: b3b50255-91a3-48a0-beee-b64030672848
+		summarizeBy: none
+		sourceColumn: preferredequipmentid
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredserviceid
+		dataType: string
+		lineageTag: 67a0d09b-5650-4a1e-ad57-27483fd20f9c
+		summarizeBy: none
+		sourceColumn: preferredserviceid
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferredsystemuserid
+		dataType: string
+		lineageTag: 7a7fecf2-3828-4597-b4e7-ef1791ae79d2
+		summarizeBy: none
+		sourceColumn: preferredsystemuserid
+
+		annotation SummarizationSetBy = Automatic
+
+	column primarycontactid
+		dataType: string
+		lineageTag: f9007abd-8fae-469f-8551-0e7770193981
+		summarizeBy: none
+		sourceColumn: primarycontactid
+
+		annotation SummarizationSetBy = Automatic
+
+	column primarysatoriid
+		dataType: string
+		lineageTag: 439cf32d-e8f7-4942-a283-1d04d4262a7f
+		summarizeBy: none
+		sourceColumn: primarysatoriid
+
+		annotation SummarizationSetBy = Automatic
+
+	column primarytwitterid
+		dataType: string
+		lineageTag: 84c733d0-e2e7-49d6-bf7b-f7db71ff088a
+		summarizeBy: none
+		sourceColumn: primarytwitterid
+
+		annotation SummarizationSetBy = Automatic
+
+	column processid
+		dataType: string
+		lineageTag: 18d77d96-8467-4df1-8d11-d992f96c59d4
+		summarizeBy: none
+		sourceColumn: processid
+
+		annotation SummarizationSetBy = Automatic
+
+	column revenue
+		dataType: double
+		lineageTag: 64907453-dd8c-4d6e-a9f5-1c2964bf81b0
+		summarizeBy: sum
+		sourceColumn: revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column revenue_base
+		dataType: double
+		lineageTag: b7830afa-ac7a-4f1c-8515-a20c4885781b
+		summarizeBy: sum
+		sourceColumn: revenue_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sharesoutstanding
+		dataType: int64
+		formatString: 0
+		lineageTag: f225118d-e020-43aa-b9c8-882555f14329
+		summarizeBy: sum
+		sourceColumn: sharesoutstanding
+
+		annotation SummarizationSetBy = Automatic
+
+	column shippingmethodcode
+		dataType: int64
+		formatString: 0
+		lineageTag: 31f06b3a-20ba-4520-86d2-7265ec1f3789
+		summarizeBy: sum
+		sourceColumn: shippingmethodcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column shippingmethodcode_display
+		dataType: string
+		lineageTag: 94f0b486-8e4c-4300-807a-0af5b3b869c8
+		summarizeBy: none
+		sourceColumn: shippingmethodcode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column sic
+		dataType: string
+		lineageTag: f251c951-a27f-4f17-a705-8a0deabba63c
+		summarizeBy: none
+		sourceColumn: sic
+
+		annotation SummarizationSetBy = Automatic
+
+	column slaid
+		dataType: string
+		lineageTag: 1fad83ac-744e-42c1-b586-aca421e82308
+		summarizeBy: none
+		sourceColumn: slaid
+
+		annotation SummarizationSetBy = Automatic
+
+	column slainvokedid
+		dataType: string
+		lineageTag: 45e6c96e-98cd-4335-933f-2d73bfeacba7
+		summarizeBy: none
+		sourceColumn: slainvokedid
+
+		annotation SummarizationSetBy = Automatic
+
+	column stageid
+		dataType: string
+		lineageTag: a4b9f2ee-fa7f-4504-a6bf-d8f00f1cf76c
+		summarizeBy: none
+		sourceColumn: stageid
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f8d7ec2-e7c6-4d8d-80d6-7ca58141c69c
+		summarizeBy: sum
+		sourceColumn: statecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode_display
+		dataType: string
+		lineageTag: 2b566d09-3bab-4afc-8997-457c759c2756
+		summarizeBy: none
+		sourceColumn: statecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 81e33e36-0f42-4361-93fa-9b0efe1fc926
+		summarizeBy: sum
+		sourceColumn: statuscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode_display
+		dataType: string
+		lineageTag: 31a949df-ed6d-44c2-a81f-9b71635a7582
+		summarizeBy: none
+		sourceColumn: statuscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column stockexchange
+		dataType: string
+		lineageTag: 1ac44965-7f26-494d-b291-4614cc140e4f
+		summarizeBy: none
+		sourceColumn: stockexchange
+
+		annotation SummarizationSetBy = Automatic
+
+	column telephone1
+		dataType: string
+		lineageTag: fa6b8e74-25bc-424b-9b09-99a1d847d9e3
+		summarizeBy: none
+		sourceColumn: telephone1
+
+		annotation SummarizationSetBy = Automatic
+
+	column telephone2
+		dataType: string
+		lineageTag: b6443e77-74f2-49d7-9bc1-d6ea439705af
+		summarizeBy: none
+		sourceColumn: telephone2
+
+		annotation SummarizationSetBy = Automatic
+
+	column telephone3
+		dataType: string
+		lineageTag: 70b7f451-4dfb-4d46-9d81-e79aeb2c263c
+		summarizeBy: none
+		sourceColumn: telephone3
+
+		annotation SummarizationSetBy = Automatic
+
+	column territorycode
+		dataType: int64
+		formatString: 0
+		lineageTag: 852e4119-9cc5-4bd0-8de2-a7cd3d436ef1
+		summarizeBy: sum
+		sourceColumn: territorycode
+
+		annotation SummarizationSetBy = Automatic
+
+	column territorycode_display
+		dataType: string
+		lineageTag: 9438b13c-343f-4617-9097-6b0a921ab06a
+		summarizeBy: none
+		sourceColumn: territorycode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column territoryid
+		dataType: string
+		lineageTag: 90d724cd-7a96-4fb0-9424-f6e7f7c419ed
+		summarizeBy: none
+		sourceColumn: territoryid
+
+		annotation SummarizationSetBy = Automatic
+
+	column tickersymbol
+		dataType: string
+		lineageTag: 0e5c9111-cfe0-4fbf-b184-eab1a1e3976f
+		summarizeBy: none
+		sourceColumn: tickersymbol
+
+		annotation SummarizationSetBy = Automatic
+
+	column timespentbymeonemailandmeetings
+		dataType: string
+		lineageTag: 7e62a275-40e7-4794-a1ea-527c40c1a45d
+		summarizeBy: none
+		sourceColumn: timespentbymeonemailandmeetings
+
+		annotation SummarizationSetBy = Automatic
+
+	column timezoneruleversionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: b4023ef6-41cb-4cea-8e85-425952f7f695
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column transactioncurrencyid
+		dataType: string
+		lineageTag: 921244f2-4d6d-4caf-a4af-4980dc59f2ce
+		summarizeBy: none
+		sourceColumn: transactioncurrencyid
+
+		annotation SummarizationSetBy = Automatic
+
+	column traversedpath
+		dataType: string
+		lineageTag: fc52b0ed-c57b-405e-991d-5105e7ad4024
+		summarizeBy: none
+		sourceColumn: traversedpath
+
+		annotation SummarizationSetBy = Automatic
+
+	column utcconversiontimezonecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 1eb26ff5-c65b-4c06-9fa8-00b094c81666
+		summarizeBy: sum
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column versionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: ba462cc8-a017-446f-a4c9-1e5720408e25
+		summarizeBy: sum
+		sourceColumn: versionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column websiteurl
+		dataType: string
+		lineageTag: 770f9078-e6dc-455d-8d37-0b4708c1b71a
+		summarizeBy: none
+		sourceColumn: websiteurl
+
+		annotation SummarizationSetBy = Automatic
+
+	column yominame
+		dataType: string
+		lineageTag: bb510d29-d580-4460-a711-e5635a3b0526
+		summarizeBy: none
+		sourceColumn: yominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_workhourtemplate
+		dataType: string
+		lineageTag: c59c7123-a5db-4200-b43a-ec2963c78718
+		summarizeBy: none
+		sourceColumn: msdyn_workhourtemplate
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_gdproptout
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 677c8cce-fb55-418b-875e-5e0bb008902a
+		summarizeBy: none
+		sourceColumn: msdyn_gdproptout
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_segmentid
+		dataType: string
+		lineageTag: 670ec35d-b692-47f9-93b7-c30fe09b1c86
+		summarizeBy: none
+		sourceColumn: msdyn_segmentid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_salesaccelerationinsightid
+		dataType: string
+		lineageTag: e9f58843-8ffc-4463-988c-57e279d306ec
+		summarizeBy: none
+		sourceColumn: msdyn_salesaccelerationinsightid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_accountkpiid
+		dataType: string
+		lineageTag: 118db618-c18e-4d27-9c09-3b4bf6d5acf4
+		summarizeBy: none
+		sourceColumn: msdyn_accountkpiid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_primarytimezone
+		dataType: int64
+		formatString: 0
+		lineageTag: b2d125f1-750a-4c18-a8a8-a0c00ed65bae
+		summarizeBy: sum
+		sourceColumn: msdyn_primarytimezone
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Account-569d5225-300c-4f1f-9ea6-7c46b05b97d4 = m
+		mode: import
+		source =
+				let
+				    Source = Cds.Entities("https://reisatech.crm2.dynamics.com", null),
+				    entities = Source{[Group="entities"]}[Data],
+				    accounts = entities{[EntitySetName="accounts"]}[Data]
+				in
+				    accounts
+
+	annotation PBI_QueryRelationships = {"columnCount":199,"keyColumnNames":["accountid"],"queryRelationships":[],"columnIdentities":["Section1/Account/accounts.{accountcategorycode,0}","Section1/Account/accounts.{accountcategorycode_display,1}","Section1/Account/accounts.{accountclassificationcode,2}","Section1/Account/accounts.{accountclassificationcode_display,3}","Section1/Account/accounts.{accountid,4}","Section1/Account/accounts.{accountnumber,5}","Section1/Account/accounts.{accountratingcode,6}","Section1/Account/accounts.{accountratingcode_display,7}","Section1/Account/accounts.{address1_addressid,8}","Section1/Account/accounts.{address1_addresstypecode,9}","Section1/Account/accounts.{address1_addresstypecode_display,10}","Section1/Account/accounts.{address1_city,11}","Section1/Account/accounts.{address1_composite,12}","Section1/Account/accounts.{address1_country,13}","Section1/Account/accounts.{address1_county,14}","Section1/Account/accounts.{address1_fax,15}","Section1/Account/accounts.{address1_freighttermscode,16}","Section1/Account/accounts.{address1_freighttermscode_display,17}","Section1/Account/accounts.{address1_latitude,18}","Section1/Account/accounts.{address1_line1,19}","Section1/Account/accounts.{address1_line2,20}","Section1/Account/accounts.{address1_line3,21}","Section1/Account/accounts.{address1_longitude,22}","Section1/Account/accounts.{address1_name,23}","Section1/Account/accounts.{address1_postalcode,24}","Section1/Account/accounts.{address1_postofficebox,25}","Section1/Account/accounts.{address1_primarycontactname,26}","Section1/Account/accounts.{address1_shippingmethodcode,27}","Section1/Account/accounts.{address1_shippingmethodcode_display,28}","Section1/Account/accounts.{address1_stateorprovince,29}","Section1/Account/accounts.{address1_telephone1,30}","Section1/Account/accounts.{address1_telephone2,31}","Section1/Account/accounts.{address1_telephone3,32}","Section1/Account/accounts.{address1_upszone,33}","Section1/Account/accounts.{address1_utcoffset,34}","Section1/Account/accounts.{address2_addressid,35}","Section1/Account/accounts.{address2_addresstypecode,36}","Section1/Account/accounts.{address2_addresstypecode_display,37}","Section1/Account/accounts.{address2_city,38}","Section1/Account/accounts.{address2_composite,39}","Section1/Account/accounts.{address2_country,40}","Section1/Account/accounts.{address2_county,41}","Section1/Account/accounts.{address2_fax,42}","Section1/Account/accounts.{address2_freighttermscode,43}","Section1/Account/accounts.{address2_freighttermscode_display,44}","Section1/Account/accounts.{address2_latitude,45}","Section1/Account/accounts.{address2_line1,46}","Section1/Account/accounts.{address2_line2,47}","Section1/Account/accounts.{address2_line3,48}","Section1/Account/accounts.{address2_longitude,49}","Section1/Account/accounts.{address2_name,50}","Section1/Account/accounts.{address2_postalcode,51}","Section1/Account/accounts.{address2_postofficebox,52}","Section1/Account/accounts.{address2_primarycontactname,53}","Section1/Account/accounts.{address2_shippingmethodcode,54}","Section1/Account/accounts.{address2_shippingmethodcode_display,55}","Section1/Account/accounts.{address2_stateorprovince,56}","Section1/Account/accounts.{address2_telephone1,57}","Section1/Account/accounts.{address2_telephone2,58}","Section1/Account/accounts.{address2_telephone3,59}","Section1/Account/accounts.{address2_upszone,60}","Section1/Account/accounts.{address2_utcoffset,61}","Section1/Account/accounts.{adx_createdbyipaddress,62}","Section1/Account/accounts.{adx_createdbyusername,63}","Section1/Account/accounts.{adx_modifiedbyipaddress,64}","Section1/Account/accounts.{adx_modifiedbyusername,65}","Section1/Account/accounts.{aging30,66}","Section1/Account/accounts.{aging30_base,67}","Section1/Account/accounts.{aging60,68}","Section1/Account/accounts.{aging60_base,69}","Section1/Account/accounts.{aging90,70}","Section1/Account/accounts.{aging90_base,71}","Section1/Account/accounts.{businesstypecode,72}","Section1/Account/accounts.{businesstypecode_display,73}","Section1/Account/accounts.{createdby,74}","Section1/Account/accounts.{createdbyexternalparty,75}","Section1/Account/accounts.{createdon,76}","Section1/Account/accounts.{createdonbehalfby,77}","Section1/Account/accounts.{creditlimit,78}","Section1/Account/accounts.{creditlimit_base,79}","Section1/Account/accounts.{creditonhold,80}","Section1/Account/accounts.{customersizecode,81}","Section1/Account/accounts.{customersizecode_display,82}","Section1/Account/accounts.{customertypecode,83}","Section1/Account/accounts.{customertypecode_display,84}","Section1/Account/accounts.{defaultpricelevelid,85}","Section1/Account/accounts.{description,86}","Section1/Account/accounts.{donotbulkemail,87}","Section1/Account/accounts.{donotbulkpostalmail,88}","Section1/Account/accounts.{donotemail,89}","Section1/Account/accounts.{donotfax,90}","Section1/Account/accounts.{donotphone,91}","Section1/Account/accounts.{donotpostalmail,92}","Section1/Account/accounts.{donotsendmm,93}","Section1/Account/accounts.{emailaddress1,94}","Section1/Account/accounts.{emailaddress2,95}","Section1/Account/accounts.{emailaddress3,96}","Section1/Account/accounts.{entityimage_timestamp,97}","Section1/Account/accounts.{entityimage_url,98}","Section1/Account/accounts.{entityimageid,99}","Section1/Account/accounts.{exchangerate,100}","Section1/Account/accounts.{fax,101}","Section1/Account/accounts.{followemail,102}","Section1/Account/accounts.{ftpsiteurl,103}","Section1/Account/accounts.{importsequencenumber,104}","Section1/Account/accounts.{industrycode,105}","Section1/Account/accounts.{industrycode_display,106}","Section1/Account/accounts.{lastonholdtime,107}","Section1/Account/accounts.{lastusedincampaign,108}","Section1/Account/accounts.{marketcap,109}","Section1/Account/accounts.{marketcap_base,110}","Section1/Account/accounts.{marketingonly,111}","Section1/Account/accounts.{masterid,112}","Section1/Account/accounts.{merged,113}","Section1/Account/accounts.{modifiedby,114}","Section1/Account/accounts.{modifiedbyexternalparty,115}","Section1/Account/accounts.{modifiedon,116}","Section1/Account/accounts.{modifiedonbehalfby,117}","Section1/Account/accounts.{ms_newsandsocialid,118}","Section1/Account/accounts.{ms_traceid,119}","Section1/Account/accounts.{ms_tweetsaboutdate,120}","Section1/Account/accounts.{ms_tweetsfromdate,121}","Section1/Account/accounts.{msa_managingpartnerid,122}","Section1/Account/accounts.{msdyn_billingaccount,123}","Section1/Account/accounts.{msdyn_externalaccountid,124}","Section1/Account/accounts.{msdyn_preferredresource,125}","Section1/Account/accounts.{msdyn_salestaxcode,126}","Section1/Account/accounts.{msdyn_serviceterritory,127}","Section1/Account/accounts.{msdyn_taxexempt,128}","Section1/Account/accounts.{msdyn_taxexemptnumber,129}","Section1/Account/accounts.{msdyn_travelcharge,130}","Section1/Account/accounts.{msdyn_travelcharge_base,131}","Section1/Account/accounts.{msdyn_travelchargetype,132}","Section1/Account/accounts.{msdyn_travelchargetype_display,133}","Section1/Account/accounts.{msdyn_workorderinstructions,134}","Section1/Account/accounts.{name,135}","Section1/Account/accounts.{numberofemployees,136}","Section1/Account/accounts.{onholdtime,137}","Section1/Account/accounts.{opendeals,138}","Section1/Account/accounts.{opendeals_date,139}","Section1/Account/accounts.{opendeals_state,140}","Section1/Account/accounts.{openrevenue,141}","Section1/Account/accounts.{openrevenue_base,142}","Section1/Account/accounts.{openrevenue_date,143}","Section1/Account/accounts.{openrevenue_state,144}","Section1/Account/accounts.{originatingleadid,145}","Section1/Account/accounts.{overriddencreatedon,146}","Section1/Account/accounts.{ownerid,147}","Section1/Account/accounts.{ownershipcode,148}","Section1/Account/accounts.{ownershipcode_display,149}","Section1/Account/accounts.{owningbusinessunit,150}","Section1/Account/accounts.{owningteam,151}","Section1/Account/accounts.{owninguser,152}","Section1/Account/accounts.{parentaccountid,153}","Section1/Account/accounts.{participatesinworkflow,154}","Section1/Account/accounts.{paymenttermscode,155}","Section1/Account/accounts.{paymenttermscode_display,156}","Section1/Account/accounts.{preferredappointmentdaycode,157}","Section1/Account/accounts.{preferredappointmentdaycode_display,158}","Section1/Account/accounts.{preferredappointmenttimecode,159}","Section1/Account/accounts.{preferredappointmenttimecode_display,160}","Section1/Account/accounts.{preferredcontactmethodcode,161}","Section1/Account/accounts.{preferredcontactmethodcode_display,162}","Section1/Account/accounts.{preferredequipmentid,163}","Section1/Account/accounts.{preferredserviceid,164}","Section1/Account/accounts.{preferredsystemuserid,165}","Section1/Account/accounts.{primarycontactid,166}","Section1/Account/accounts.{primarysatoriid,167}","Section1/Account/accounts.{primarytwitterid,168}","Section1/Account/accounts.{processid,169}","Section1/Account/accounts.{revenue,170}","Section1/Account/accounts.{revenue_base,171}","Section1/Account/accounts.{sharesoutstanding,172}","Section1/Account/accounts.{shippingmethodcode,173}","Section1/Account/accounts.{shippingmethodcode_display,174}","Section1/Account/accounts.{sic,175}","Section1/Account/accounts.{slaid,176}","Section1/Account/accounts.{slainvokedid,177}","Section1/Account/accounts.{stageid,178}","Section1/Account/accounts.{statecode,179}","Section1/Account/accounts.{statecode_display,180}","Section1/Account/accounts.{statuscode,181}","Section1/Account/accounts.{statuscode_display,182}","Section1/Account/accounts.{stockexchange,183}","Section1/Account/accounts.{telephone1,184}","Section1/Account/accounts.{telephone2,185}","Section1/Account/accounts.{telephone3,186}","Section1/Account/accounts.{territorycode,187}","Section1/Account/accounts.{territorycode_display,188}","Section1/Account/accounts.{territoryid,189}","Section1/Account/accounts.{tickersymbol,190}","Section1/Account/accounts.{timespentbymeonemailandmeetings,191}","Section1/Account/accounts.{timezoneruleversionnumber,192}","Section1/Account/accounts.{transactioncurrencyid,193}","Section1/Account/accounts.{traversedpath,194}","Section1/Account/accounts.{utcconversiontimezonecode,195}","Section1/Account/accounts.{versionnumber,196}","Section1/Account/accounts.{websiteurl,197}","Section1/Account/accounts.{yominame,198}"],"ColumnCount":199,"KeyColumnNames":["accountid"],"ColumnIdentities":["Section1/Account/accounts.{accountcategorycode,0}","Section1/Account/accounts.{accountcategorycode_display,1}","Section1/Account/accounts.{accountclassificationcode,2}","Section1/Account/accounts.{accountclassificationcode_display,3}","Section1/Account/accounts.{accountid,4}","Section1/Account/accounts.{accountnumber,5}","Section1/Account/accounts.{accountratingcode,6}","Section1/Account/accounts.{accountratingcode_display,7}","Section1/Account/accounts.{address1_addressid,8}","Section1/Account/accounts.{address1_addresstypecode,9}","Section1/Account/accounts.{address1_addresstypecode_display,10}","Section1/Account/accounts.{address1_city,11}","Section1/Account/accounts.{address1_composite,12}","Section1/Account/accounts.{address1_country,13}","Section1/Account/accounts.{address1_county,14}","Section1/Account/accounts.{address1_fax,15}","Section1/Account/accounts.{address1_freighttermscode,16}","Section1/Account/accounts.{address1_freighttermscode_display,17}","Section1/Account/accounts.{address1_latitude,18}","Section1/Account/accounts.{address1_line1,19}","Section1/Account/accounts.{address1_line2,20}","Section1/Account/accounts.{address1_line3,21}","Section1/Account/accounts.{address1_longitude,22}","Section1/Account/accounts.{address1_name,23}","Section1/Account/accounts.{address1_postalcode,24}","Section1/Account/accounts.{address1_postofficebox,25}","Section1/Account/accounts.{address1_primarycontactname,26}","Section1/Account/accounts.{address1_shippingmethodcode,27}","Section1/Account/accounts.{address1_shippingmethodcode_display,28}","Section1/Account/accounts.{address1_stateorprovince,29}","Section1/Account/accounts.{address1_telephone1,30}","Section1/Account/accounts.{address1_telephone2,31}","Section1/Account/accounts.{address1_telephone3,32}","Section1/Account/accounts.{address1_upszone,33}","Section1/Account/accounts.{address1_utcoffset,34}","Section1/Account/accounts.{address2_addressid,35}","Section1/Account/accounts.{address2_addresstypecode,36}","Section1/Account/accounts.{address2_addresstypecode_display,37}","Section1/Account/accounts.{address2_city,38}","Section1/Account/accounts.{address2_composite,39}","Section1/Account/accounts.{address2_country,40}","Section1/Account/accounts.{address2_county,41}","Section1/Account/accounts.{address2_fax,42}","Section1/Account/accounts.{address2_freighttermscode,43}","Section1/Account/accounts.{address2_freighttermscode_display,44}","Section1/Account/accounts.{address2_latitude,45}","Section1/Account/accounts.{address2_line1,46}","Section1/Account/accounts.{address2_line2,47}","Section1/Account/accounts.{address2_line3,48}","Section1/Account/accounts.{address2_longitude,49}","Section1/Account/accounts.{address2_name,50}","Section1/Account/accounts.{address2_postalcode,51}","Section1/Account/accounts.{address2_postofficebox,52}","Section1/Account/accounts.{address2_primarycontactname,53}","Section1/Account/accounts.{address2_shippingmethodcode,54}","Section1/Account/accounts.{address2_shippingmethodcode_display,55}","Section1/Account/accounts.{address2_stateorprovince,56}","Section1/Account/accounts.{address2_telephone1,57}","Section1/Account/accounts.{address2_telephone2,58}","Section1/Account/accounts.{address2_telephone3,59}","Section1/Account/accounts.{address2_upszone,60}","Section1/Account/accounts.{address2_utcoffset,61}","Section1/Account/accounts.{adx_createdbyipaddress,62}","Section1/Account/accounts.{adx_createdbyusername,63}","Section1/Account/accounts.{adx_modifiedbyipaddress,64}","Section1/Account/accounts.{adx_modifiedbyusername,65}","Section1/Account/accounts.{aging30,66}","Section1/Account/accounts.{aging30_base,67}","Section1/Account/accounts.{aging60,68}","Section1/Account/accounts.{aging60_base,69}","Section1/Account/accounts.{aging90,70}","Section1/Account/accounts.{aging90_base,71}","Section1/Account/accounts.{businesstypecode,72}","Section1/Account/accounts.{businesstypecode_display,73}","Section1/Account/accounts.{createdby,74}","Section1/Account/accounts.{createdbyexternalparty,75}","Section1/Account/accounts.{createdon,76}","Section1/Account/accounts.{createdonbehalfby,77}","Section1/Account/accounts.{creditlimit,78}","Section1/Account/accounts.{creditlimit_base,79}","Section1/Account/accounts.{creditonhold,80}","Section1/Account/accounts.{customersizecode,81}","Section1/Account/accounts.{customersizecode_display,82}","Section1/Account/accounts.{customertypecode,83}","Section1/Account/accounts.{customertypecode_display,84}","Section1/Account/accounts.{defaultpricelevelid,85}","Section1/Account/accounts.{description,86}","Section1/Account/accounts.{donotbulkemail,87}","Section1/Account/accounts.{donotbulkpostalmail,88}","Section1/Account/accounts.{donotemail,89}","Section1/Account/accounts.{donotfax,90}","Section1/Account/accounts.{donotphone,91}","Section1/Account/accounts.{donotpostalmail,92}","Section1/Account/accounts.{donotsendmm,93}","Section1/Account/accounts.{emailaddress1,94}","Section1/Account/accounts.{emailaddress2,95}","Section1/Account/accounts.{emailaddress3,96}","Section1/Account/accounts.{entityimage_timestamp,97}","Section1/Account/accounts.{entityimage_url,98}","Section1/Account/accounts.{entityimageid,99}","Section1/Account/accounts.{exchangerate,100}","Section1/Account/accounts.{fax,101}","Section1/Account/accounts.{followemail,102}","Section1/Account/accounts.{ftpsiteurl,103}","Section1/Account/accounts.{importsequencenumber,104}","Section1/Account/accounts.{industrycode,105}","Section1/Account/accounts.{industrycode_display,106}","Section1/Account/accounts.{lastonholdtime,107}","Section1/Account/accounts.{lastusedincampaign,108}","Section1/Account/accounts.{marketcap,109}","Section1/Account/accounts.{marketcap_base,110}","Section1/Account/accounts.{marketingonly,111}","Section1/Account/accounts.{masterid,112}","Section1/Account/accounts.{merged,113}","Section1/Account/accounts.{modifiedby,114}","Section1/Account/accounts.{modifiedbyexternalparty,115}","Section1/Account/accounts.{modifiedon,116}","Section1/Account/accounts.{modifiedonbehalfby,117}","Section1/Account/accounts.{ms_newsandsocialid,118}","Section1/Account/accounts.{ms_traceid,119}","Section1/Account/accounts.{ms_tweetsaboutdate,120}","Section1/Account/accounts.{ms_tweetsfromdate,121}","Section1/Account/accounts.{msa_managingpartnerid,122}","Section1/Account/accounts.{msdyn_billingaccount,123}","Section1/Account/accounts.{msdyn_externalaccountid,124}","Section1/Account/accounts.{msdyn_preferredresource,125}","Section1/Account/accounts.{msdyn_salestaxcode,126}","Section1/Account/accounts.{msdyn_serviceterritory,127}","Section1/Account/accounts.{msdyn_taxexempt,128}","Section1/Account/accounts.{msdyn_taxexemptnumber,129}","Section1/Account/accounts.{msdyn_travelcharge,130}","Section1/Account/accounts.{msdyn_travelcharge_base,131}","Section1/Account/accounts.{msdyn_travelchargetype,132}","Section1/Account/accounts.{msdyn_travelchargetype_display,133}","Section1/Account/accounts.{msdyn_workorderinstructions,134}","Section1/Account/accounts.{name,135}","Section1/Account/accounts.{numberofemployees,136}","Section1/Account/accounts.{onholdtime,137}","Section1/Account/accounts.{opendeals,138}","Section1/Account/accounts.{opendeals_date,139}","Section1/Account/accounts.{opendeals_state,140}","Section1/Account/accounts.{openrevenue,141}","Section1/Account/accounts.{openrevenue_base,142}","Section1/Account/accounts.{openrevenue_date,143}","Section1/Account/accounts.{openrevenue_state,144}","Section1/Account/accounts.{originatingleadid,145}","Section1/Account/accounts.{overriddencreatedon,146}","Section1/Account/accounts.{ownerid,147}","Section1/Account/accounts.{ownershipcode,148}","Section1/Account/accounts.{ownershipcode_display,149}","Section1/Account/accounts.{owningbusinessunit,150}","Section1/Account/accounts.{owningteam,151}","Section1/Account/accounts.{owninguser,152}","Section1/Account/accounts.{parentaccountid,153}","Section1/Account/accounts.{participatesinworkflow,154}","Section1/Account/accounts.{paymenttermscode,155}","Section1/Account/accounts.{paymenttermscode_display,156}","Section1/Account/accounts.{preferredappointmentdaycode,157}","Section1/Account/accounts.{preferredappointmentdaycode_display,158}","Section1/Account/accounts.{preferredappointmenttimecode,159}","Section1/Account/accounts.{preferredappointmenttimecode_display,160}","Section1/Account/accounts.{preferredcontactmethodcode,161}","Section1/Account/accounts.{preferredcontactmethodcode_display,162}","Section1/Account/accounts.{preferredequipmentid,163}","Section1/Account/accounts.{preferredserviceid,164}","Section1/Account/accounts.{preferredsystemuserid,165}","Section1/Account/accounts.{primarycontactid,166}","Section1/Account/accounts.{primarysatoriid,167}","Section1/Account/accounts.{primarytwitterid,168}","Section1/Account/accounts.{processid,169}","Section1/Account/accounts.{revenue,170}","Section1/Account/accounts.{revenue_base,171}","Section1/Account/accounts.{sharesoutstanding,172}","Section1/Account/accounts.{shippingmethodcode,173}","Section1/Account/accounts.{shippingmethodcode_display,174}","Section1/Account/accounts.{sic,175}","Section1/Account/accounts.{slaid,176}","Section1/Account/accounts.{slainvokedid,177}","Section1/Account/accounts.{stageid,178}","Section1/Account/accounts.{statecode,179}","Section1/Account/accounts.{statecode_display,180}","Section1/Account/accounts.{statuscode,181}","Section1/Account/accounts.{statuscode_display,182}","Section1/Account/accounts.{stockexchange,183}","Section1/Account/accounts.{telephone1,184}","Section1/Account/accounts.{telephone2,185}","Section1/Account/accounts.{telephone3,186}","Section1/Account/accounts.{territorycode,187}","Section1/Account/accounts.{territorycode_display,188}","Section1/Account/accounts.{territoryid,189}","Section1/Account/accounts.{tickersymbol,190}","Section1/Account/accounts.{timespentbymeonemailandmeetings,191}","Section1/Account/accounts.{timezoneruleversionnumber,192}","Section1/Account/accounts.{transactioncurrencyid,193}","Section1/Account/accounts.{traversedpath,194}","Section1/Account/accounts.{utcconversiontimezonecode,195}","Section1/Account/accounts.{versionnumber,196}","Section1/Account/accounts.{websiteurl,197}","Section1/Account/accounts.{yominame,198}"],"RelationshipInfo":[]}
+
+	annotation PBI_ResultType = Table
+

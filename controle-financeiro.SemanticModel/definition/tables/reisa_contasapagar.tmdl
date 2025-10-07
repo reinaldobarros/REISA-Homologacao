@@ -1,0 +1,397 @@
+table reisa_contasapagar
+	lineageTag: 91ab73c6-a1ff-430b-9090-1e88d337733c
+
+	measure Líquido =
+			
+			SUM('reisa_contasareceber'[reisa_valor]) - SUM('reisa_contasapagar'[reisa_valor])
+		lineageTag: 0693ce64-d758-48dc-b601-0daed21cd557
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "MathematicalSubtraction"
+				}
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column createdby
+		dataType: string
+		displayFolder: Criador
+		lineageTag: 34bfcb5c-a9c3-4e88-b84c-4f5fda57c8b9
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdon
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Criador
+		lineageTag: a153ee80-7aac-4c77-910a-8e27e57139b9
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: 8e8f770f-f3fb-43bb-b90f-08ae5b4e5d4a
+			defaultHierarchy: LocalDateTable_5674bdc7-f421-4576-9ad9-13a6053c2fab.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: 5140d0fe-cbf1-4119-a3eb-248b19ade885
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column exchangerate
+		dataType: double
+		lineageTag: fdf34d15-a320-4841-9916-2a9e668d2c0c
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column importsequencenumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 1859e219-0613-4002-84b8-7673704fcf0a
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: 4ea1eda0-11f8-4f09-a719-e1483fc96de2
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 533be7c2-04a0-49cd-ad5d-ea3649236476
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: a86524fe-0c28-4a94-8f89-ce880cc9703a
+			defaultHierarchy: LocalDateTable_9089d3a6-0338-4432-a745-93bead4c5c9e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: b0118520-6b3a-45a0-99d4-324b28ff14d3
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column overriddencreatedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 92cc67ec-4fa8-4ed8-b2f5-3af3dc2f7147
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: e4724ed5-38fa-444b-8669-affb58efce26
+			defaultHierarchy: LocalDateTable_d5f565da-6eb1-4a4c-87bd-d4908fdec0b9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownerid
+		dataType: string
+		lineageTag: c0722098-004d-4840-8cb3-d750f257f7f7
+		summarizeBy: none
+		sourceColumn: ownerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningbusinessunit
+		dataType: string
+		lineageTag: 6a564981-27d6-41f6-87ce-e5274f4d1c51
+		summarizeBy: none
+		sourceColumn: owningbusinessunit
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningteam
+		dataType: string
+		lineageTag: f69a6d62-3f72-4f37-9c8c-9f4d73729e80
+		summarizeBy: none
+		sourceColumn: owningteam
+
+		annotation SummarizationSetBy = Automatic
+
+	column owninguser
+		dataType: string
+		lineageTag: 3d7e0cb9-50b1-4c3b-b0bc-a69f47a0e645
+		summarizeBy: none
+		sourceColumn: owninguser
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_cliente
+		dataType: string
+		lineageTag: 42792451-f17b-428f-9b16-a05e9338bcd6
+		summarizeBy: none
+		sourceColumn: reisa_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_contasapagarid
+		dataType: string
+		lineageTag: 48bd7fcd-fa45-41c3-94c4-b96fca819edc
+		summarizeBy: none
+		sourceColumn: reisa_contasapagarid
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_contasareceber
+		dataType: string
+		lineageTag: 32563352-da72-4b27-be10-ee2f7c6a7492
+		summarizeBy: none
+		sourceColumn: reisa_contasareceber
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_datapagamento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fe87764d-99da-4de8-874f-0be7743bd2da
+		summarizeBy: none
+		sourceColumn: reisa_datapagamento
+
+		variation Variation
+			isDefault
+			relationship: 2a2b2c42-26f8-4945-9096-2827144ce325
+			defaultHierarchy: LocalDateTable_3db88085-eec3-4879-ab47-f4b08bfac815.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column reisa_fornecedor
+		dataType: string
+		lineageTag: d1f44667-3eef-4cb2-a105-5e6c7004d57a
+		summarizeBy: none
+		sourceColumn: reisa_fornecedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_statuspagamento
+		dataType: int64
+		formatString: 0
+		lineageTag: aaa087a0-a916-43f0-bb44-fd935e612fcb
+		summarizeBy: sum
+		sourceColumn: reisa_statuspagamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_statuspagamento_display
+		dataType: string
+		lineageTag: af9e0121-5941-43d0-97fd-f523b5cb40f6
+		summarizeBy: none
+		sourceColumn: reisa_statuspagamento_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_titulo
+		dataType: string
+		lineageTag: 1152b2d0-2761-428d-bfc1-1f204969925e
+		summarizeBy: none
+		sourceColumn: reisa_titulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_valor
+		dataType: double
+		lineageTag: a238cc62-58c8-4573-83b0-e6213038c243
+		summarizeBy: sum
+		sourceColumn: reisa_valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_valor_base
+		dataType: double
+		lineageTag: 7da0ca76-cb7b-4484-885e-a04c462813d1
+		summarizeBy: sum
+		sourceColumn: reisa_valor_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_vencimento
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 89aa8c78-5851-4afc-9b10-b85a985f5ff8
+		summarizeBy: none
+		sourceColumn: reisa_vencimento
+
+		variation Variation
+			isDefault
+			relationship: 81278460-4d77-4764-8048-333412da41e7
+			defaultHierarchy: LocalDateTable_6d7c3ad9-3dd0-404b-8532-58eb6dd1eb73.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode
+		dataType: int64
+		formatString: 0
+		lineageTag: bef20703-58cd-4f0c-aca7-7284ce3aeec5
+		summarizeBy: sum
+		sourceColumn: statecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode_display
+		dataType: string
+		lineageTag: e4ff77f7-5cec-496e-bd6f-b8ecc04dbf0d
+		summarizeBy: none
+		sourceColumn: statecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 43e3580d-5501-479c-bdf6-2c47df3b2936
+		summarizeBy: sum
+		sourceColumn: statuscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode_display
+		dataType: string
+		lineageTag: 3fa42421-f118-4c8a-8581-905a40c9ec3f
+		summarizeBy: none
+		sourceColumn: statuscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column timezoneruleversionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 961b2f2f-e172-4949-9d8e-2b0a61dc04c0
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column transactioncurrencyid
+		dataType: string
+		lineageTag: 6e3bcf07-d806-4262-9da2-c6de987d0aa5
+		summarizeBy: none
+		sourceColumn: transactioncurrencyid
+
+		annotation SummarizationSetBy = Automatic
+
+	column utcconversiontimezonecode
+		dataType: int64
+		formatString: 0
+		lineageTag: f832e455-8d08-49e8-b793-9c055b935efa
+		summarizeBy: sum
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column versionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b002206-c528-4bf7-a983-8dd1f0a2459a
+		summarizeBy: sum
+		sourceColumn: versionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_origem
+		dataType: string
+		lineageTag: 06e4de61-b51a-4c0b-a1d5-4375f155396d
+		summarizeBy: none
+		sourceColumn: reisa_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account.name'
+		dataType: string
+		lineageTag: 71ae0a79-6555-486d-8c86-6eb64effeb66
+		summarizeBy: none
+		sourceColumn: Account.name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'reisa_contasareceber.1.reisa_datadepagamento'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cea5c5c2-f24c-4749-9ace-db0e448ebe03
+		summarizeBy: none
+		sourceColumn: reisa_contasareceber.1.reisa_datadepagamento
+
+		variation Variation
+			isDefault
+			relationship: 1bce8ddf-d664-4fd9-a074-c9300a997ac9
+			defaultHierarchy: LocalDateTable_c75dec74-45c8-4a46-9318-5bd9656b21f8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f3376481-0cc9-4790-a1bd-dcf42ed90a65
+		summarizeBy: none
+		sourceColumn: data
+
+		variation Variation
+			isDefault
+			relationship: 5b04b9f8-aeed-4752-9514-3301678a109b
+			defaultHierarchy: LocalDateTable_a3588255-f8be-487f-aab1-d24926aa1a8a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column valor
+		dataType: string
+		lineageTag: 78f489c6-fd50-4a85-a36c-d8c08931fe31
+		summarizeBy: none
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition reisa_contasapagar-4adb283a-3b70-4b20-ba33-a22dc7c03ef3 = m
+		mode: import
+		source =
+				let
+				    Source = Cds.Entities("https://reisatech.crm2.dynamics.com", [ReorderColumns=null, UseFormattedValue=null]),
+				    entities = Source{[Group="entities"]}[Data],
+				    reisa_contasapagars = entities{[EntitySetName="reisa_contasapagars"]}[Data],
+				    #"Merged Queries" = Table.NestedJoin(reisa_contasapagars, {"reisa_fornecedor"}, Account, {"accountid"}, "Account", JoinKind.LeftOuter),
+				    #"Expanded Account" = Table.ExpandTableColumn(#"Merged Queries", "Account", {"name"}, {"Account.name"}),
+				    #"Merged Queries1" = Table.NestedJoin(#"Expanded Account", {"reisa_contasareceber"}, reisa_contasareceber, {"reisa_contasareceberid"}, "reisa_contasareceber.1", JoinKind.LeftOuter),
+				    #"Expanded reisa_contasareceber.1" = Table.ExpandTableColumn(#"Merged Queries1", "reisa_contasareceber.1", {"reisa_datadepagamento"}, {"reisa_contasareceber.1.reisa_datadepagamento"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Expanded reisa_contasareceber.1",{{"reisa_contasareceber.1.reisa_datadepagamento", type date}, {"reisa_datapagamento", type date}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type", "data", each if [reisa_vencimento] = null then [reisa_contasareceber.1.reisa_datadepagamento] else [reisa_vencimento]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"data", type date}}),
+				    #"Added Custom1" = Table.AddColumn(#"Changed Type1", "valor", each [reisa_valor]*-1)
+				in
+				    #"Added Custom1"
+
+	annotation PBI_QueryRelationships = {"columnCount":34,"keyColumnNames":[],"queryRelationships":[{"keyColumnCount":1,"keyColumn":17,"otherKeyColumnIdentity":"Section1/Account/accounts.{accountid,4}","KeyColumnCount":1}],"columnIdentities":["Section1/reisa_contasapagar/reisa_contasapagars.{createdby,0}","Section1/reisa_contasapagar/reisa_contasapagars.{createdon,1}","Section1/reisa_contasapagar/reisa_contasapagars.{createdonbehalfby,2}","Section1/reisa_contasapagar/reisa_contasapagars.{exchangerate,3}","Section1/reisa_contasapagar/reisa_contasapagars.{importsequencenumber,4}","Section1/reisa_contasapagar/reisa_contasapagars.{modifiedby,5}","Section1/reisa_contasapagar/reisa_contasapagars.{modifiedon,6}","Section1/reisa_contasapagar/reisa_contasapagars.{modifiedonbehalfby,7}","Section1/reisa_contasapagar/reisa_contasapagars.{overriddencreatedon,8}","Section1/reisa_contasapagar/reisa_contasapagars.{ownerid,9}","Section1/reisa_contasapagar/reisa_contasapagars.{owningbusinessunit,10}","Section1/reisa_contasapagar/reisa_contasapagars.{owningteam,11}","Section1/reisa_contasapagar/reisa_contasapagars.{owninguser,12}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_cliente,13}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_contasapagarid,14}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_contasareceber,15}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_datapagamento,16}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_fornecedor,17}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_origem,18}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_statuspagamento,19}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_statuspagamento_display,20}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_titulo,21}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_valor,22}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_valor_base,23}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_vencimento,24}","Section1/reisa_contasapagar/reisa_contasapagars.{statecode,25}","Section1/reisa_contasapagar/reisa_contasapagars.{statecode_display,26}","Section1/reisa_contasapagar/reisa_contasapagars.{statuscode,27}","Section1/reisa_contasapagar/reisa_contasapagars.{statuscode_display,28}","Section1/reisa_contasapagar/reisa_contasapagars.{timezoneruleversionnumber,29}","Section1/reisa_contasapagar/reisa_contasapagars.{transactioncurrencyid,30}","Section1/reisa_contasapagar/reisa_contasapagars.{utcconversiontimezonecode,31}","Section1/reisa_contasapagar/reisa_contasapagars.{versionnumber,32}","Section1/Account/accounts.{name,135}"],"ColumnCount":34,"KeyColumnNames":[],"ColumnIdentities":["Section1/reisa_contasapagar/reisa_contasapagars.{createdby,0}","Section1/reisa_contasapagar/reisa_contasapagars.{createdon,1}","Section1/reisa_contasapagar/reisa_contasapagars.{createdonbehalfby,2}","Section1/reisa_contasapagar/reisa_contasapagars.{exchangerate,3}","Section1/reisa_contasapagar/reisa_contasapagars.{importsequencenumber,4}","Section1/reisa_contasapagar/reisa_contasapagars.{modifiedby,5}","Section1/reisa_contasapagar/reisa_contasapagars.{modifiedon,6}","Section1/reisa_contasapagar/reisa_contasapagars.{modifiedonbehalfby,7}","Section1/reisa_contasapagar/reisa_contasapagars.{overriddencreatedon,8}","Section1/reisa_contasapagar/reisa_contasapagars.{ownerid,9}","Section1/reisa_contasapagar/reisa_contasapagars.{owningbusinessunit,10}","Section1/reisa_contasapagar/reisa_contasapagars.{owningteam,11}","Section1/reisa_contasapagar/reisa_contasapagars.{owninguser,12}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_cliente,13}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_contasapagarid,14}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_contasareceber,15}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_datapagamento,16}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_fornecedor,17}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_origem,18}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_statuspagamento,19}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_statuspagamento_display,20}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_titulo,21}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_valor,22}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_valor_base,23}","Section1/reisa_contasapagar/reisa_contasapagars.{reisa_vencimento,24}","Section1/reisa_contasapagar/reisa_contasapagars.{statecode,25}","Section1/reisa_contasapagar/reisa_contasapagars.{statecode_display,26}","Section1/reisa_contasapagar/reisa_contasapagars.{statuscode,27}","Section1/reisa_contasapagar/reisa_contasapagars.{statuscode_display,28}","Section1/reisa_contasapagar/reisa_contasapagars.{timezoneruleversionnumber,29}","Section1/reisa_contasapagar/reisa_contasapagars.{transactioncurrencyid,30}","Section1/reisa_contasapagar/reisa_contasapagars.{utcconversiontimezonecode,31}","Section1/reisa_contasapagar/reisa_contasapagars.{versionnumber,32}","Section1/Account/accounts.{name,135}"],"RelationshipInfo":[{"keyColumnCount":1,"keyColumn":17,"otherKeyColumnIdentity":"Section1/Account/accounts.{accountid,4}","KeyColumnCount":1}]}
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,100 @@
+table fluxocaixa
+	lineageTag: d6522e1c-a364-488f-802e-64c1800756c8
+
+	column reisa_statuspagamento_display
+		dataType: string
+		lineageTag: b029ff3a-b336-42f6-8f75-e23aa31d9955
+		summarizeBy: none
+		sourceColumn: reisa_statuspagamento_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_origem
+		dataType: string
+		lineageTag: 96b7faea-36ff-4af7-b05f-886cefd50b89
+		summarizeBy: none
+		sourceColumn: reisa_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: int64
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 467839ce-9b4c-420f-8def-299b0f01a2e5
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		lineageTag: 81914f57-edbf-4b3d-9f01-04cbed496541
+		summarizeBy: none
+		sourceColumn: data
+
+		variation Variation
+			isDefault
+			relationship: f2244ed4-c762-45a6-8f1e-334add5ca793
+			defaultHierarchy: LocalDateTable_a9cd49c0-bcc5-460b-be72-62680bc54ebf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Projeto.msdyn_subject'
+		dataType: string
+		lineageTag: dcd44c2e-a810-44dd-8e90-9a3d3b2f0434
+		summarizeBy: none
+		sourceColumn: Projeto.msdyn_subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account.name'
+		dataType: string
+		lineageTag: 97375f85-5c55-43e2-a119-da2d918d16f9
+		summarizeBy: none
+		sourceColumn: Account.name
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode_display
+		dataType: string
+		lineageTag: 1d1403ae-a32d-4d43-bee7-c733b4b27bd9
+		summarizeBy: none
+		sourceColumn: statuscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode_display
+		dataType: string
+		lineageTag: 121ac1c7-a919-415b-b5c9-c0fda84023df
+		summarizeBy: none
+		sourceColumn: statecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_titulo
+		dataType: string
+		lineageTag: fb22634d-d4f3-44f4-894f-a23a7c2166c9
+		summarizeBy: none
+		sourceColumn: reisa_titulo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fluxocaixa-23946035-d913-4beb-8441-21d184f6ec16 = m
+		mode: import
+		source =
+				let
+				    Source = reisa_contasareceber,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"reisa_titulo", "statecode_display", "statuscode_display", "Account.name", "Projeto.msdyn_subject", "data", "valor"}),
+				    #"Appended Query" = Table.Combine({#"Removed Other Columns", reisa_contasapagar}),
+				    #"Removed Other Columns1" = Table.SelectColumns(#"Appended Query",{"reisa_statuspagamento_display", "reisa_origem", "valor", "data", "Projeto.msdyn_subject", "Account.name", "statuscode_display", "statecode_display", "reisa_titulo"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Removed Other Columns1",{{"valor", Int64.Type}}),
+				    #"Sorted Rows" = Table.Sort(#"Changed Type",{{"data", Order.Ascending}})
+				in
+				    #"Sorted Rows"
+
+	annotation PBI_ResultType = Table
+

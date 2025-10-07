@@ -1,0 +1,507 @@
+table reisa_contasareceber
+	lineageTag: 35e4e467-698f-47ec-b8e4-a8b3aae9be60
+
+	column createdby
+		dataType: string
+		lineageTag: afe66f89-0b1c-403c-bad8-73db02935c85
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4d7dea32-dacd-44af-989b-ef968b60ccf2
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: 1487f24e-6b4d-46f2-9be7-3fa35d9266d0
+			defaultHierarchy: LocalDateTable_9a5bf9da-c945-4031-96ad-05e7d23c4b66.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: 4cd7afa5-f23b-4eb9-bad3-35282942b421
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column exchangerate
+		dataType: double
+		lineageTag: b615640b-7f29-47c0-9e3c-36e2651dab51
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column importsequencenumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e85c5c9-6bee-46f3-ab3d-7d4acd8ad2fe
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: 0da34ac0-0b2e-4576-9ad9-93c1ded6a7a6
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 15390792-282d-41c0-bbaf-b2f31d1ef045
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: 3297326b-449a-4453-9670-6852611f1a82
+			defaultHierarchy: LocalDateTable_b99d71ea-fd37-46d8-a01c-3f5c6b57d533.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: 70097aed-5017-4f1d-8b4b-44fde21a9b58
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column overriddencreatedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bb175b0a-c4e2-4c7a-a314-aac1f7a65991
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: 5487fd47-90d7-4a76-a097-be47fe252172
+			defaultHierarchy: LocalDateTable_d91dbb40-4e67-4bee-ab34-54ce0e447e27.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownerid
+		dataType: string
+		lineageTag: 9bd5e7ca-fbf1-4e82-956e-7a0413527e8f
+		summarizeBy: none
+		sourceColumn: ownerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningbusinessunit
+		dataType: string
+		lineageTag: e557e20b-558d-4d19-83c6-7fc3b47ddade
+		summarizeBy: none
+		sourceColumn: owningbusinessunit
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningteam
+		dataType: string
+		lineageTag: 8baa7768-b65b-4832-86d7-4272fde53fdc
+		summarizeBy: none
+		sourceColumn: owningteam
+
+		annotation SummarizationSetBy = Automatic
+
+	column owninguser
+		dataType: string
+		lineageTag: 2eae8c12-e301-4437-bb6f-3bbdfd349952
+		summarizeBy: none
+		sourceColumn: owninguser
+
+		annotation SummarizationSetBy = Automatic
+
+	column processid
+		dataType: string
+		lineageTag: 2cab0550-bc91-4e18-923a-22747f7ff2db
+		summarizeBy: none
+		sourceColumn: processid
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_cliente
+		dataType: string
+		lineageTag: fe41c797-2bb3-49ea-98b6-c9611e33ef54
+		summarizeBy: none
+		sourceColumn: reisa_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_contasareceberid
+		dataType: string
+		lineageTag: 5e75ccf7-044a-40d2-8d27-43c9226f4e14
+		summarizeBy: none
+		sourceColumn: reisa_contasareceberid
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_datadepagamento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f69592f0-682a-4b3c-bbe4-c0cc218b8269
+		summarizeBy: none
+		sourceColumn: reisa_datadepagamento
+
+		variation Variation
+			isDefault
+			relationship: c78824be-1be5-44d5-ad48-9f531d224ed0
+			defaultHierarchy: LocalDateTable_e259ffab-1390-4171-a243-2c8cbaf19dde.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column reisa_existeretencaodeimpostos
+		dataType: int64
+		formatString: 0
+		lineageTag: 9c3d91ee-80a6-4537-a2b5-121db7893b58
+		summarizeBy: sum
+		sourceColumn: reisa_existeretencaodeimpostos
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_existeretencaodeimpostos_display
+		dataType: string
+		lineageTag: 5bb96199-e721-409b-8bb3-fdf88facdbad
+		summarizeBy: none
+		sourceColumn: reisa_existeretencaodeimpostos_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_notafiscal
+		dataType: string
+		lineageTag: 519f16b6-6212-4340-943a-4d8660e2a96e
+		summarizeBy: none
+		sourceColumn: reisa_notafiscal
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_projeto
+		dataType: string
+		lineageTag: d2853156-b386-409d-b6df-44ee1ad1c9c1
+		summarizeBy: none
+		sourceColumn: reisa_projeto
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_retencao
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4d8a1104-b8f9-4579-be82-dc3839539c29
+		summarizeBy: none
+		sourceColumn: reisa_retencao
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_retencoesdocliente
+		dataType: string
+		lineageTag: 45b03924-f00c-4e2b-bed1-9213081f3bcb
+		summarizeBy: none
+		sourceColumn: reisa_retencoesdocliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_tipodeservico
+		dataType: string
+		lineageTag: d2ac38b5-e93e-4b01-9422-a0f20574b4a5
+		summarizeBy: none
+		sourceColumn: reisa_tipodeservico
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_titulo
+		dataType: string
+		lineageTag: 400af857-aa90-4a9a-a62a-2e87da21e3ee
+		summarizeBy: none
+		sourceColumn: reisa_titulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_valor
+		dataType: double
+		lineageTag: 04898fb6-d342-4502-a039-f36d74089325
+		summarizeBy: sum
+		sourceColumn: reisa_valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_valor_base
+		dataType: double
+		lineageTag: fb150500-61ee-4270-9d97-d60651ac5e51
+		summarizeBy: sum
+		sourceColumn: reisa_valor_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_valorliquido
+		dataType: double
+		lineageTag: e1196901-3a29-44d9-a5d4-1d59b1aac9ba
+		summarizeBy: sum
+		sourceColumn: reisa_valorliquido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_valorliquido_base
+		dataType: double
+		lineageTag: 1ce4fb5f-7173-4c56-916d-089446be40d9
+		summarizeBy: sum
+		sourceColumn: reisa_valorliquido_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_valorretido
+		dataType: double
+		lineageTag: f62092fe-83cd-490f-8827-9c114ab11d96
+		summarizeBy: sum
+		sourceColumn: reisa_valorretido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_valorretido_base
+		dataType: double
+		lineageTag: 71ddde71-6124-457b-be03-bfa274eed72d
+		summarizeBy: sum
+		sourceColumn: reisa_valorretido_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stageid
+		dataType: string
+		lineageTag: d661adb8-7652-4d7f-aed7-482d01e423f6
+		summarizeBy: none
+		sourceColumn: stageid
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 4655f2d0-b444-4660-ba19-81feebd8afe9
+		summarizeBy: sum
+		sourceColumn: statecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode_display
+		dataType: string
+		lineageTag: 06a1c884-ae9b-4bdc-9422-bcfcdfc10431
+		summarizeBy: none
+		sourceColumn: statecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 6bb58336-99bc-451c-af4e-8beb0be54496
+		summarizeBy: sum
+		sourceColumn: statuscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode_display
+		dataType: string
+		lineageTag: 65179311-445c-4caf-8f7b-4da9a8fedfcd
+		summarizeBy: none
+		sourceColumn: statuscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column timezoneruleversionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: e1788a6b-af6e-4674-a726-793a59a22d8c
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column transactioncurrencyid
+		dataType: string
+		lineageTag: 5895f977-83a1-4a7e-a3fb-5fb4d15ff002
+		summarizeBy: none
+		sourceColumn: transactioncurrencyid
+
+		annotation SummarizationSetBy = Automatic
+
+	column traversedpath
+		dataType: string
+		lineageTag: cd11f4ae-28a0-4304-8913-b1306b805cf0
+		summarizeBy: none
+		sourceColumn: traversedpath
+
+		annotation SummarizationSetBy = Automatic
+
+	column utcconversiontimezonecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b0ce199-47c9-44ef-bc72-f6039c47c614
+		summarizeBy: sum
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column versionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 7960e597-347d-4fc4-9eac-fdf3e2641376
+		summarizeBy: sum
+		sourceColumn: versionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account.name'
+		dataType: string
+		lineageTag: 267bfbd8-c8aa-4488-b53f-30bd8e60824a
+		summarizeBy: none
+		sourceColumn: Account.name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Projeto.msdyn_projecttemplate'
+		dataType: string
+		lineageTag: 2481b017-a59c-4b18-862d-d33a4bdd2696
+		summarizeBy: none
+		sourceColumn: Projeto.msdyn_projecttemplate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Projeto.msdyn_subject'
+		dataType: string
+		lineageTag: b70d55c6-020b-4744-9eb3-78f442d2df0c
+		summarizeBy: none
+		sourceColumn: Projeto.msdyn_subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b7ec372a-87a9-48d1-af9a-bc957aaab973
+		summarizeBy: none
+		sourceColumn: data
+
+		variation Variation
+			isDefault
+			relationship: e7f10de7-c623-46a9-943e-c34a3722ce4e
+			defaultHierarchy: LocalDateTable_9bafe736-efdd-4afe-a18b-0e9b690e436b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column valor
+		dataType: string
+		lineageTag: 782aaa56-606d-4f51-a8b8-07fb67946564
+		summarizeBy: none
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	column cr8ff_datafaturamento
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 530afa72-e23b-40c8-85de-ea52cec04f3e
+		summarizeBy: none
+		sourceColumn: cr8ff_datafaturamento
+
+		variation Variation
+			isDefault
+			relationship: c1d46c9a-b1cf-41b9-9a0c-4315930981b4
+			defaultHierarchy: LocalDateTable_42d189fa-d806-407b-8d9c-d6a23a724af1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column cr8ff_desconto
+		dataType: double
+		lineageTag: 4b54d093-fcbb-4588-a379-7bcdbc8e1bc3
+		summarizeBy: sum
+		sourceColumn: cr8ff_desconto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cr8ff_horasalocadas
+		dataType: double
+		lineageTag: eb8665f5-99ba-4519-9f89-19fff213e817
+		summarizeBy: sum
+		sourceColumn: cr8ff_horasalocadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cr8ff_po
+		dataType: string
+		lineageTag: 77f4a161-a83a-4f1e-95a7-8d28ef4a3aed
+		summarizeBy: none
+		sourceColumn: cr8ff_po
+
+		annotation SummarizationSetBy = Automatic
+
+	column cr8ff_preco
+		dataType: string
+		lineageTag: 1498449a-a679-4fbd-831f-98e559cf2068
+		summarizeBy: none
+		sourceColumn: cr8ff_preco
+
+		annotation SummarizationSetBy = Automatic
+
+	column cr8ff_precodafuncao
+		dataType: string
+		lineageTag: b76fc580-c504-4b24-b5bb-5c110e28df62
+		summarizeBy: none
+		sourceColumn: cr8ff_precodafuncao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition reisa_contasareceber-f64a42a2-4c1e-477a-9752-42cc039b0f99 = m
+		mode: import
+		source =
+				let
+				    Source = Cds.Entities("https://reisatech.crm2.dynamics.com", [ReorderColumns=null, UseFormattedValue=null]),
+				    entities = Source{[Group="entities"]}[Data],
+				    reisa_contasarecebers = entities{[EntitySetName="reisa_contasarecebers"]}[Data],
+				    #"Merged Queries" = Table.NestedJoin(reisa_contasarecebers, {"reisa_cliente"}, Account, {"accountid"}, "Account", JoinKind.LeftOuter),
+				    #"Expanded Account" = Table.ExpandTableColumn(#"Merged Queries", "Account", {"name"}, {"Account.name"}),
+				    #"Merged Queries1" = Table.NestedJoin(#"Expanded Account", {"reisa_projeto"}, msdyn_project, {"msdyn_projectid"}, "msdyn_project", JoinKind.LeftOuter),
+				    #"Renamed Columns" = Table.RenameColumns(#"Merged Queries1",{{"msdyn_project", "Projeto"}}),
+				    #"Expanded Projeto" = Table.ExpandTableColumn(#"Renamed Columns", "Projeto", {"msdyn_projecttemplate", "msdyn_subject"}, {"Projeto.msdyn_projecttemplate", "Projeto.msdyn_subject"}),
+				    #"Added Custom" = Table.AddColumn(#"Expanded Projeto", "data", each [reisa_datadepagamento]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"reisa_datadepagamento", type date}, {"data", type date}}),
+				    #"Added Custom1" = Table.AddColumn(#"Changed Type", "valor", each [reisa_valorliquido])
+				in
+				    #"Added Custom1"
+
+	annotation PBI_QueryRelationships = {"columnCount":44,"keyColumnNames":[],"queryRelationships":[{"keyColumnCount":1,"keyColumn":14,"otherKeyColumnIdentity":"Section1/Account/accounts.{accountid,4}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":20,"otherKeyColumnIdentity":"Section1/msdyn_project/msdyn_projects.{msdyn_projectid,40}","KeyColumnCount":1}],"columnIdentities":["Section1/reisa_contasareceber/reisa_contasarecebers.{createdby,0}","Section1/reisa_contasareceber/reisa_contasarecebers.{createdon,1}","Section1/reisa_contasareceber/reisa_contasarecebers.{createdonbehalfby,2}","Section1/reisa_contasareceber/reisa_contasarecebers.{exchangerate,3}","Section1/reisa_contasareceber/reisa_contasarecebers.{importsequencenumber,4}","Section1/reisa_contasareceber/reisa_contasarecebers.{modifiedby,5}","Section1/reisa_contasareceber/reisa_contasarecebers.{modifiedon,6}","Section1/reisa_contasareceber/reisa_contasarecebers.{modifiedonbehalfby,7}","Section1/reisa_contasareceber/reisa_contasarecebers.{overriddencreatedon,8}","Section1/reisa_contasareceber/reisa_contasarecebers.{ownerid,9}","Section1/reisa_contasareceber/reisa_contasarecebers.{owningbusinessunit,10}","Section1/reisa_contasareceber/reisa_contasarecebers.{owningteam,11}","Section1/reisa_contasareceber/reisa_contasarecebers.{owninguser,12}","Section1/reisa_contasareceber/reisa_contasarecebers.{processid,13}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_cliente,14}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_contasareceberid,15}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_datadepagamento,16}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_existeretencaodeimpostos,17}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_existeretencaodeimpostos_display,18}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_notafiscal,19}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_projeto,20}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_retencao,21}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_retencoesdocliente,22}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_tipodeservico,23}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_titulo,24}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valor,25}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valor_base,26}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorliquido,27}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorliquido_base,28}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorretido,29}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorretido_base,30}","Section1/reisa_contasareceber/reisa_contasarecebers.{stageid,31}","Section1/reisa_contasareceber/reisa_contasarecebers.{statecode,32}","Section1/reisa_contasareceber/reisa_contasarecebers.{statecode_display,33}","Section1/reisa_contasareceber/reisa_contasarecebers.{statuscode,34}","Section1/reisa_contasareceber/reisa_contasarecebers.{statuscode_display,35}","Section1/reisa_contasareceber/reisa_contasarecebers.{timezoneruleversionnumber,36}","Section1/reisa_contasareceber/reisa_contasarecebers.{transactioncurrencyid,37}","Section1/reisa_contasareceber/reisa_contasarecebers.{traversedpath,38}","Section1/reisa_contasareceber/reisa_contasarecebers.{utcconversiontimezonecode,39}","Section1/reisa_contasareceber/reisa_contasarecebers.{versionnumber,40}","Section1/Account/accounts.{name,135}","Section1/msdyn_project/msdyn_projects.{msdyn_projecttemplate,44}","Section1/msdyn_project/msdyn_projects.{msdyn_subject,64}"],"ColumnCount":44,"KeyColumnNames":[],"ColumnIdentities":["Section1/reisa_contasareceber/reisa_contasarecebers.{createdby,0}","Section1/reisa_contasareceber/reisa_contasarecebers.{createdon,1}","Section1/reisa_contasareceber/reisa_contasarecebers.{createdonbehalfby,2}","Section1/reisa_contasareceber/reisa_contasarecebers.{exchangerate,3}","Section1/reisa_contasareceber/reisa_contasarecebers.{importsequencenumber,4}","Section1/reisa_contasareceber/reisa_contasarecebers.{modifiedby,5}","Section1/reisa_contasareceber/reisa_contasarecebers.{modifiedon,6}","Section1/reisa_contasareceber/reisa_contasarecebers.{modifiedonbehalfby,7}","Section1/reisa_contasareceber/reisa_contasarecebers.{overriddencreatedon,8}","Section1/reisa_contasareceber/reisa_contasarecebers.{ownerid,9}","Section1/reisa_contasareceber/reisa_contasarecebers.{owningbusinessunit,10}","Section1/reisa_contasareceber/reisa_contasarecebers.{owningteam,11}","Section1/reisa_contasareceber/reisa_contasarecebers.{owninguser,12}","Section1/reisa_contasareceber/reisa_contasarecebers.{processid,13}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_cliente,14}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_contasareceberid,15}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_datadepagamento,16}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_existeretencaodeimpostos,17}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_existeretencaodeimpostos_display,18}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_notafiscal,19}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_projeto,20}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_retencao,21}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_retencoesdocliente,22}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_tipodeservico,23}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_titulo,24}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valor,25}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valor_base,26}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorliquido,27}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorliquido_base,28}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorretido,29}","Section1/reisa_contasareceber/reisa_contasarecebers.{reisa_valorretido_base,30}","Section1/reisa_contasareceber/reisa_contasarecebers.{stageid,31}","Section1/reisa_contasareceber/reisa_contasarecebers.{statecode,32}","Section1/reisa_contasareceber/reisa_contasarecebers.{statecode_display,33}","Section1/reisa_contasareceber/reisa_contasarecebers.{statuscode,34}","Section1/reisa_contasareceber/reisa_contasarecebers.{statuscode_display,35}","Section1/reisa_contasareceber/reisa_contasarecebers.{timezoneruleversionnumber,36}","Section1/reisa_contasareceber/reisa_contasarecebers.{transactioncurrencyid,37}","Section1/reisa_contasareceber/reisa_contasarecebers.{traversedpath,38}","Section1/reisa_contasareceber/reisa_contasarecebers.{utcconversiontimezonecode,39}","Section1/reisa_contasareceber/reisa_contasarecebers.{versionnumber,40}","Section1/Account/accounts.{name,135}","Section1/msdyn_project/msdyn_projects.{msdyn_projecttemplate,44}","Section1/msdyn_project/msdyn_projects.{msdyn_subject,64}"],"RelationshipInfo":[{"keyColumnCount":1,"keyColumn":14,"otherKeyColumnIdentity":"Section1/Account/accounts.{accountid,4}","KeyColumnCount":1},{"keyColumnCount":1,"keyColumn":20,"otherKeyColumnIdentity":"Section1/msdyn_project/msdyn_projects.{msdyn_projectid,40}","KeyColumnCount":1}]}
+
+	annotation PBI_ResultType = Table
+

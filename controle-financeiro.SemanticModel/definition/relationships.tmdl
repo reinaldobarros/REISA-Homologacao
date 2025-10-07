@@ -1,0 +1,207 @@
+relationship 8e8f770f-f3fb-43bb-b90f-08ae5b4e5d4a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasapagar.createdon
+	toColumn: LocalDateTable_5674bdc7-f421-4576-9ad9-13a6053c2fab.Date
+
+relationship a86524fe-0c28-4a94-8f89-ce880cc9703a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasapagar.modifiedon
+	toColumn: LocalDateTable_9089d3a6-0338-4432-a745-93bead4c5c9e.Date
+
+relationship e4724ed5-38fa-444b-8669-affb58efce26
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasapagar.overriddencreatedon
+	toColumn: LocalDateTable_d5f565da-6eb1-4a4c-87bd-d4908fdec0b9.Date
+
+relationship 2a2b2c42-26f8-4945-9096-2827144ce325
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasapagar.reisa_datapagamento
+	toColumn: LocalDateTable_3db88085-eec3-4879-ab47-f4b08bfac815.Date
+
+relationship 81278460-4d77-4764-8048-333412da41e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasapagar.reisa_vencimento
+	toColumn: LocalDateTable_6d7c3ad9-3dd0-404b-8532-58eb6dd1eb73.Date
+
+relationship 1487f24e-6b4d-46f2-9be7-3fa35d9266d0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasareceber.createdon
+	toColumn: LocalDateTable_9a5bf9da-c945-4031-96ad-05e7d23c4b66.Date
+
+relationship 3297326b-449a-4453-9670-6852611f1a82
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasareceber.modifiedon
+	toColumn: LocalDateTable_b99d71ea-fd37-46d8-a01c-3f5c6b57d533.Date
+
+relationship 5487fd47-90d7-4a76-a097-be47fe252172
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasareceber.overriddencreatedon
+	toColumn: LocalDateTable_d91dbb40-4e67-4bee-ab34-54ce0e447e27.Date
+
+relationship c78824be-1be5-44d5-ad48-9f531d224ed0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasareceber.reisa_datadepagamento
+	toColumn: LocalDateTable_e259ffab-1390-4171-a243-2c8cbaf19dde.Date
+
+relationship eec4a6c6-064c-41b7-a039-dfa3bf582621
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_imposto.createdon
+	toColumn: LocalDateTable_9f54c330-2150-4137-9dc3-f07bbb25e8d4.Date
+
+relationship de8f0279-5de5-4cb2-9a19-031a53372638
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_imposto.modifiedon
+	toColumn: LocalDateTable_3b4d4d15-790c-40f4-ba7b-010f14157795.Date
+
+relationship a3d3a8cb-f5ea-4672-9c72-d7a2bf2a2f52
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_imposto.overriddencreatedon
+	toColumn: LocalDateTable_3e3d43e5-3572-4b18-a6df-ec24851fb4be.Date
+
+relationship a21849d0-025c-43d9-bcf2-88b30a16f664
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_empresa.createdon
+	toColumn: LocalDateTable_45126f2a-99c0-4852-85e2-dca139643533.Date
+
+relationship ed58eadc-cd5a-45bc-bf50-c8574524b420
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_empresa.modifiedon
+	toColumn: LocalDateTable_5b97d64b-3d79-46d4-a48f-2058f18d6503.Date
+
+relationship 89943176-8d5e-4fa6-920f-e6257014f22e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_empresa.overriddencreatedon
+	toColumn: LocalDateTable_95c89da9-ae78-4ce2-8749-6264788cb67c.Date
+
+relationship 62162503-c899-42eb-9d82-437ff916ef68
+	crossFilteringBehavior: bothDirections
+	fromColumn: reisa_contasapagar.reisa_contasareceber
+	toColumn: reisa_contasareceber.reisa_contasareceberid
+
+relationship b3b20348-3fd9-489d-9a4f-b3ecf37c3c03
+	crossFilteringBehavior: bothDirections
+	fromColumn: reisa_imposto.reisa_contasareceber
+	toColumn: reisa_contasareceber.reisa_contasareceberid
+
+relationship a061639b-8b5a-4ac1-aa78-d3f1f63c9f6c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Account.createdon
+	toColumn: LocalDateTable_9b1bb1ed-7e59-4451-ab4f-1a4e147f364e.Date
+
+relationship 8e3676ca-387f-47e8-9386-36b6660ee009
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Account.lastonholdtime
+	toColumn: LocalDateTable_3fef4d68-0459-443f-a87e-8ff5edb4b7fc.Date
+
+relationship 23a32335-96ea-4e74-9bb1-6e91f01ae5a7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Account.lastusedincampaign
+	toColumn: LocalDateTable_a344e915-5213-4bb4-8d19-a4558876eb25.Date
+
+relationship dcc15324-848e-41fd-b87f-60a8d70e7544
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Account.modifiedon
+	toColumn: LocalDateTable_caa6a3e1-8b7a-493d-8b24-3b246f6e677d.Date
+
+relationship 7d8c744c-71fb-4f2d-a9ee-d9d24b8d6296
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Account.opendeals_date
+	toColumn: LocalDateTable_3a6a15df-e0db-4769-b8ab-69043dd305c5.Date
+
+relationship 276eb1ad-c513-44a4-b9b6-1702ff947dba
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Account.openrevenue_date
+	toColumn: LocalDateTable_75f44e40-9514-43c8-8c6f-4b084a688c87.Date
+
+relationship 49b98540-4897-4d09-93da-6f550c1a68d8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Account.overriddencreatedon
+	toColumn: LocalDateTable_3e22bcbf-5f72-4fd8-b1a5-a84aa8a12d7c.Date
+
+relationship 456b338c-a98a-4eb3-9bad-c401d45fd425
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.createdon
+	toColumn: LocalDateTable_f4ab87fa-66d8-4b20-8dfc-a22e288bae6f.Date
+
+relationship 58cd26b1-8f0f-4e8e-9143-e0ea018a39cb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.modifiedon
+	toColumn: LocalDateTable_931b337a-1f80-4041-8c97-0099a2d832d5.Date
+
+relationship fd7530f7-be8b-4efa-b3bb-fe711e6a0bdc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.msdyn_actualend
+	toColumn: LocalDateTable_805e00cd-42c7-42a5-926e-409cc4b74e61.Date
+
+relationship f6cc773f-76b6-4154-9e0a-479179d76cec
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.msdyn_actualstart
+	toColumn: LocalDateTable_0596018d-ada2-4743-8dd4-96c877042e63.Date
+
+relationship 35b87a56-b443-410f-9627-11c4befa482f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.msdyn_scheduledend
+	toColumn: LocalDateTable_898a30de-bb21-4290-95db-4a0bb16b180e.Date
+
+relationship 4c21f7fb-d6ae-43d9-ac9f-8d29c8f8918f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.msdyn_scheduledstart
+	toColumn: LocalDateTable_76e71c32-0e17-421d-9963-7c4b63b6bf52.Date
+
+relationship aec75f87-2dba-4c53-9e81-27e97785a711
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.msdyn_statusupdatedon
+	toColumn: LocalDateTable_ceb698e6-d1e6-4ac0-8918-2e894df62aaa.Date
+
+relationship 1a4c6e57-518d-458e-9e84-9d27e93eba15
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.msdyn_teamsize_date
+	toColumn: LocalDateTable_34154625-85c6-4744-b4f5-8b213027076b.Date
+
+relationship 1bb73b90-9864-4814-b4cf-ce4f0a8ba2c0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: msdyn_project.overriddencreatedon
+	toColumn: LocalDateTable_ab185ecb-ee8b-4ef2-889c-ccdfc3bdd622.Date
+
+relationship 1b516195-7ebd-4141-84ae-acb64421bbf8
+	isActive: false
+	fromColumn: reisa_contasapagar.reisa_cliente
+	toColumn: Account.accountid
+
+relationship 3fe2576d-50ff-4e7a-a383-c67ba991fec2
+	fromColumn: reisa_contasareceber.reisa_cliente
+	toColumn: Account.accountid
+
+relationship 416c1472-00ef-4cd3-89e1-16b5bb4481ec
+	fromColumn: reisa_contasareceber.reisa_projeto
+	toColumn: msdyn_project.msdyn_projectid
+
+relationship e7f10de7-c623-46a9-943e-c34a3722ce4e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasareceber.data
+	toColumn: LocalDateTable_9bafe736-efdd-4afe-a18b-0e9b690e436b.Date
+
+relationship 1bce8ddf-d664-4fd9-a074-c9300a997ac9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasapagar.'reisa_contasareceber.1.reisa_datadepagamento'
+	toColumn: LocalDateTable_c75dec74-45c8-4a46-9318-5bd9656b21f8.Date
+
+relationship 5b04b9f8-aeed-4752-9514-3301678a109b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasapagar.data
+	toColumn: LocalDateTable_a3588255-f8be-487f-aab1-d24926aa1a8a.Date
+
+relationship f2244ed4-c762-45a6-8f1e-334add5ca793
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fluxocaixa.data
+	toColumn: LocalDateTable_a9cd49c0-bcc5-460b-be72-62680bc54ebf.Date
+
+relationship 07040ed7-9dd1-4fa4-9a33-b3d5d4268121
+	fromColumn: fluxocaixa.reisa_titulo
+	toColumn: reisa_contasareceber.reisa_titulo
+
+relationship c1d46c9a-b1cf-41b9-9a0c-4315930981b4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: reisa_contasareceber.cr8ff_datafaturamento
+	toColumn: LocalDateTable_42d189fa-d806-407b-8d9c-d6a23a724af1.Date
+

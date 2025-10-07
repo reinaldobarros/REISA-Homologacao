@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "12c2d4d91241b5aa5554",
+  "position": {
+    "x": 0,
+    "y": 169.7391304347826,
+    "z": 4000,
+    "height": 162.78260869565219,
+    "width": 320
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "reisa_contasapagar"
+                    }
+                  },
+                  "Property": "Account.name"
+                }
+              },
+              "queryRef": "reisa_contasapagar.Account.name",
+              "active": true,
+              "displayName": "Fornecedor"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

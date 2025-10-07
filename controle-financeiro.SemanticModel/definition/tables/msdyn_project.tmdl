@@ -1,0 +1,870 @@
+table msdyn_project
+	lineageTag: 167898d2-c7ef-41ca-895b-fc27524d2e77
+
+	column createdby
+		dataType: string
+		lineageTag: 62ccc0d8-e16d-4235-97c9-090b6adb5744
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 974c58ca-aa52-4552-9a39-e81b46b8f91a
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: 456b338c-a98a-4eb3-9bad-c401d45fd425
+			defaultHierarchy: LocalDateTable_f4ab87fa-66d8-4b20-8dfc-a22e288bae6f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: f92e59d5-6626-45bc-8836-6ec753afca10
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column exchangerate
+		dataType: double
+		lineageTag: 080931a6-c5c9-42b5-881b-163208f350e8
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column importsequencenumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 588cd92f-19af-45fc-aed1-47a2c4f93731
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: 3c97a1fc-c44d-41ff-94bd-79868dd64990
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ef0e3aa9-45ba-45e5-878e-8682e7f83287
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: 58cd26b1-8f0f-4e8e-9143-e0ea018a39cb
+			defaultHierarchy: LocalDateTable_931b337a-1f80-4041-8c97-0099a2d832d5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: 7a55fa6d-debb-48cc-a827-c6c2b0f183aa
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_actualdurationminutes
+		dataType: int64
+		formatString: 0
+		lineageTag: 61823dc4-ca29-461e-a325-4b8d34602252
+		summarizeBy: sum
+		sourceColumn: msdyn_actualdurationminutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_actualend
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c388024d-1db6-48b5-9080-ca45ca3aa81c
+		summarizeBy: none
+		sourceColumn: msdyn_actualend
+
+		variation Variation
+			isDefault
+			relationship: fd7530f7-be8b-4efa-b3bb-fe711e6a0bdc
+			defaultHierarchy: LocalDateTable_805e00cd-42c7-42a5-926e-409cc4b74e61.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_actualhours
+		dataType: double
+		lineageTag: 6a4c98b9-bcf5-4be3-a867-ae8102249c70
+		summarizeBy: sum
+		sourceColumn: msdyn_actualhours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_actualsales
+		dataType: double
+		lineageTag: 866d490a-5e06-4eda-b421-0eb1503539f8
+		summarizeBy: sum
+		sourceColumn: msdyn_actualsales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_actualsales_base
+		dataType: double
+		lineageTag: dd69e4b5-3a57-47db-92d8-fc1fac5430f2
+		summarizeBy: sum
+		sourceColumn: msdyn_actualsales_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_actualstart
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ab6d7614-e5c4-4151-af3b-c5393227fdfa
+		summarizeBy: none
+		sourceColumn: msdyn_actualstart
+
+		variation Variation
+			isDefault
+			relationship: f6cc773f-76b6-4154-9e0a-479179d76cec
+			defaultHierarchy: LocalDateTable_0596018d-ada2-4743-8dd4-96c877042e63.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_bulkgenerationstatus
+		dataType: int64
+		formatString: 0
+		lineageTag: a1ccad52-76c4-463a-bb15-fefa740c9916
+		summarizeBy: sum
+		sourceColumn: msdyn_bulkgenerationstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_bulkgenerationstatus_display
+		dataType: string
+		lineageTag: 6dad439f-7b53-41b8-8d53-0cd97a86dbf5
+		summarizeBy: none
+		sourceColumn: msdyn_bulkgenerationstatus_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_calendarid
+		dataType: string
+		lineageTag: 268f42d3-6d82-449b-b25c-9dc21acbb41d
+		summarizeBy: none
+		sourceColumn: msdyn_calendarid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_comments
+		dataType: string
+		lineageTag: 6e2783c8-62fd-4599-936f-6bf98777dcc6
+		summarizeBy: none
+		sourceColumn: msdyn_comments
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_contractorganizationalunitid
+		dataType: string
+		lineageTag: c25674af-3a45-4107-93e0-8f5e83ee834b
+		summarizeBy: none
+		sourceColumn: msdyn_contractorganizationalunitid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_costconsumption
+		dataType: double
+		lineageTag: 70c22d3d-e0e3-491d-ba3b-9767a0cb7b9c
+		summarizeBy: sum
+		sourceColumn: msdyn_costconsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_costestimateatcomplete
+		dataType: double
+		lineageTag: 7c5a00a0-234e-41bb-903b-a2ea9e29ea1a
+		summarizeBy: sum
+		sourceColumn: msdyn_costestimateatcomplete
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_costestimateatcomplete_base
+		dataType: double
+		lineageTag: 574bd78c-737a-428f-8200-3c4358e40263
+		summarizeBy: sum
+		sourceColumn: msdyn_costestimateatcomplete_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_costperformence
+		dataType: int64
+		formatString: 0
+		lineageTag: 86b896b0-e6d9-4dc8-95a2-54d73f7467f1
+		summarizeBy: sum
+		sourceColumn: msdyn_costperformence
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_costperformence_display
+		dataType: string
+		lineageTag: 11e101d8-782d-46fe-b7e1-f8dda742ec2d
+		summarizeBy: none
+		sourceColumn: msdyn_costperformence_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_costvariance
+		dataType: double
+		lineageTag: 130ed5a9-5df1-41ae-80a4-724ae477f9d3
+		summarizeBy: sum
+		sourceColumn: msdyn_costvariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_costvariance_base
+		dataType: double
+		lineageTag: d0df17b0-ebfc-47ac-9872-1d22f1a886df
+		summarizeBy: sum
+		sourceColumn: msdyn_costvariance_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_customer
+		dataType: string
+		lineageTag: 3639e451-6024-4855-b8c5-eb62b935c0fe
+		summarizeBy: none
+		sourceColumn: msdyn_customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_description
+		dataType: string
+		lineageTag: e65d5451-0bae-49fa-8b26-10a7a3f88235
+		summarizeBy: none
+		sourceColumn: msdyn_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_disablecreateofteammemberformanager
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b7cb4492-30bf-4f44-851c-19ee54f700c1
+		summarizeBy: none
+		sourceColumn: msdyn_disablecreateofteammemberformanager
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_effortestimateatcompleteeac
+		dataType: double
+		lineageTag: e2eb6410-7e98-452e-b713-6ec245bcbe18
+		summarizeBy: sum
+		sourceColumn: msdyn_effortestimateatcompleteeac
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_exchangerate
+		dataType: double
+		lineageTag: 398086ed-9adf-4d9e-94a5-6116895dc91e
+		summarizeBy: sum
+		sourceColumn: msdyn_exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_islinkedtomsprojectclient
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 54b8b6b8-6855-4395-9f76-31a936094617
+		summarizeBy: none
+		sourceColumn: msdyn_islinkedtomsprojectclient
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_istemplate
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e41d58f4-9fa8-4db0-ac5f-526fc0516730
+		summarizeBy: none
+		sourceColumn: msdyn_istemplate
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_linkeddocumenturl
+		dataType: string
+		lineageTag: 8cf4dc7d-6dfa-4b67-bc91-2bc3c6c85c72
+		summarizeBy: none
+		sourceColumn: msdyn_linkeddocumenturl
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_overallprojectstatus
+		dataType: int64
+		formatString: 0
+		lineageTag: f3d8132d-8e3b-4994-abce-f8162315d58d
+		summarizeBy: sum
+		sourceColumn: msdyn_overallprojectstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_overallprojectstatus_display
+		dataType: string
+		lineageTag: 899f6e7a-91f2-4bdb-8800-5f812fa98a4f
+		summarizeBy: none
+		sourceColumn: msdyn_overallprojectstatus_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_plannedhours
+		dataType: double
+		lineageTag: 90003999-f1c3-48d6-8b6c-62436304777b
+		summarizeBy: sum
+		sourceColumn: msdyn_plannedhours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_plannedsales
+		dataType: double
+		lineageTag: 2449fa23-342d-4544-ae3b-cc9cd29525c4
+		summarizeBy: sum
+		sourceColumn: msdyn_plannedsales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_plannedsales_base
+		dataType: double
+		lineageTag: 969fe988-7214-4e4c-aa53-3b5a60d0121f
+		summarizeBy: sum
+		sourceColumn: msdyn_plannedsales_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_progress
+		dataType: double
+		lineageTag: c0d3cd26-9570-4d9c-90d0-ea8c80e70db2
+		summarizeBy: sum
+		sourceColumn: msdyn_progress
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_projectid
+		dataType: string
+		lineageTag: b7ae3b59-4deb-4b92-ace4-67d3055c7389
+		summarizeBy: none
+		sourceColumn: msdyn_projectid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_projectmanager
+		dataType: string
+		lineageTag: 5254cf06-f0eb-4eea-b6b4-f965eb0ad59b
+		summarizeBy: none
+		sourceColumn: msdyn_projectmanager
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_projectresourcerequirementsvisibletore
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 99a1ed20-6c1f-41b3-a04c-7ffaf4634df4
+		summarizeBy: none
+		sourceColumn: msdyn_projectresourcerequirementsvisibletore
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_projectteamid
+		dataType: string
+		lineageTag: b8c3f7f4-01a4-4d75-8809-fdd5f334ce54
+		summarizeBy: none
+		sourceColumn: msdyn_projectteamid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_projecttemplate
+		dataType: string
+		lineageTag: 00d09936-c57d-4edb-b2d4-74acd778ddf5
+		summarizeBy: none
+		sourceColumn: msdyn_projecttemplate
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_remainingcost
+		dataType: double
+		lineageTag: e009148a-13e9-4164-9b25-41b080f6de4c
+		summarizeBy: sum
+		sourceColumn: msdyn_remainingcost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_remainingcost_base
+		dataType: double
+		lineageTag: db70f715-75cf-4e51-b8a8-ca1e9c26b7ba
+		summarizeBy: sum
+		sourceColumn: msdyn_remainingcost_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_remaininghours
+		dataType: double
+		lineageTag: 5a0ac611-4f67-4f1c-824e-5c11750a59b5
+		summarizeBy: sum
+		sourceColumn: msdyn_remaininghours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_remainingsales
+		dataType: double
+		lineageTag: 0956f031-03af-4019-abfd-bc916072702d
+		summarizeBy: sum
+		sourceColumn: msdyn_remainingsales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_remainingsales_base
+		dataType: double
+		lineageTag: 5a4d7d05-2c65-4d49-9e43-e6d18da3ba07
+		summarizeBy: sum
+		sourceColumn: msdyn_remainingsales_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_salesconsumption
+		dataType: double
+		lineageTag: 1103989b-81ed-47e8-8385-e5877ffc0d94
+		summarizeBy: sum
+		sourceColumn: msdyn_salesconsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_salesestimateatcompleteeac
+		dataType: double
+		lineageTag: bb3f25c8-7d70-41c0-8c55-5ecf6d2f5c51
+		summarizeBy: sum
+		sourceColumn: msdyn_salesestimateatcompleteeac
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_salesestimateatcompleteeac_base
+		dataType: double
+		lineageTag: 2bd09b97-d520-4cb3-8300-e915ce3510ce
+		summarizeBy: sum
+		sourceColumn: msdyn_salesestimateatcompleteeac_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_salesorderid
+		dataType: string
+		lineageTag: 1d767701-99f3-4fec-b057-700b9f0159c0
+		summarizeBy: none
+		sourceColumn: msdyn_salesorderid
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_salesvariance
+		dataType: double
+		lineageTag: e7417713-f03f-48a6-8397-6baa131d9b88
+		summarizeBy: sum
+		sourceColumn: msdyn_salesvariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_salesvariance_base
+		dataType: double
+		lineageTag: bcd87b18-8928-444a-a7d5-24690a8f7dcc
+		summarizeBy: sum
+		sourceColumn: msdyn_salesvariance_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_scheduleddurationminutes
+		dataType: int64
+		formatString: 0
+		lineageTag: 98b2a064-d8b3-41f5-a667-b7a63e02367b
+		summarizeBy: sum
+		sourceColumn: msdyn_scheduleddurationminutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_scheduledend
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d009b8ef-7486-482c-9cf9-0665d3b65897
+		summarizeBy: none
+		sourceColumn: msdyn_scheduledend
+
+		variation Variation
+			isDefault
+			relationship: 35b87a56-b443-410f-9627-11c4befa482f
+			defaultHierarchy: LocalDateTable_898a30de-bb21-4290-95db-4a0bb16b180e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_scheduledstart
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b9f4d840-585b-4af9-93f1-28b5de6a1393
+		summarizeBy: none
+		sourceColumn: msdyn_scheduledstart
+
+		variation Variation
+			isDefault
+			relationship: 4c21f7fb-d6ae-43d9-ac9f-8d29c8f8918f
+			defaultHierarchy: LocalDateTable_76e71c32-0e17-421d-9963-7c4b63b6bf52.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_scheduleperformance
+		dataType: int64
+		formatString: 0
+		lineageTag: 60d58cf9-89fb-4993-a876-7be8cc864e87
+		summarizeBy: sum
+		sourceColumn: msdyn_scheduleperformance
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_scheduleperformance_display
+		dataType: string
+		lineageTag: f674beae-634e-4116-b744-55c52336525b
+		summarizeBy: none
+		sourceColumn: msdyn_scheduleperformance_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_schedulevariance
+		dataType: double
+		lineageTag: 599570f4-1bec-45ab-a215-65d32d279945
+		summarizeBy: sum
+		sourceColumn: msdyn_schedulevariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_stagename
+		dataType: string
+		lineageTag: 2840ab5f-42ce-4213-9270-7a4377ca3cc4
+		summarizeBy: none
+		sourceColumn: msdyn_stagename
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_statusupdatedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4963d22a-065e-48df-8f25-e67202fc6642
+		summarizeBy: none
+		sourceColumn: msdyn_statusupdatedon
+
+		variation Variation
+			isDefault
+			relationship: aec75f87-2dba-4c53-9e81-27e97785a711
+			defaultHierarchy: LocalDateTable_ceb698e6-d1e6-4ac0-8918-2e894df62aaa.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_subject
+		dataType: string
+		lineageTag: ffe05d20-34f7-4fe4-8c1c-78a61671f31f
+		summarizeBy: none
+		sourceColumn: msdyn_subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_teamsize
+		dataType: int64
+		formatString: 0
+		lineageTag: 777ecbe0-52dc-4f41-87b0-ad031866ff29
+		summarizeBy: sum
+		sourceColumn: msdyn_teamsize
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_teamsize_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1d95e2fb-0a16-4522-8014-a64521322f6e
+		summarizeBy: none
+		sourceColumn: msdyn_teamsize_date
+
+		variation Variation
+			isDefault
+			relationship: 1a4c6e57-518d-458e-9e84-9d27e93eba15
+			defaultHierarchy: LocalDateTable_34154625-85c6-4744-b4f5-8b213027076b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_teamsize_state
+		dataType: int64
+		formatString: 0
+		lineageTag: f744be36-f60b-431d-af7d-73ab8b70cf4b
+		summarizeBy: sum
+		sourceColumn: msdyn_teamsize_state
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_totalactualcost
+		dataType: double
+		lineageTag: 7d62cfa9-1e9c-47ca-8dff-815cb3b456d7
+		summarizeBy: sum
+		sourceColumn: msdyn_totalactualcost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_totalactualcost_base
+		dataType: double
+		lineageTag: 90a71089-a61f-4894-bc65-5e79ec74a1af
+		summarizeBy: sum
+		sourceColumn: msdyn_totalactualcost_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_totalplannedcost
+		dataType: double
+		lineageTag: 649f1f2e-d277-49fd-8d93-c2cd18386d44
+		summarizeBy: sum
+		sourceColumn: msdyn_totalplannedcost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_totalplannedcost_base
+		dataType: double
+		lineageTag: 2edc874d-560e-41a2-812a-60dc4f7dcca4
+		summarizeBy: sum
+		sourceColumn: msdyn_totalplannedcost_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column msdyn_wbsduration
+		dataType: int64
+		formatString: 0
+		lineageTag: 982196e7-5ed8-4d13-8800-d2a21bb7b711
+		summarizeBy: sum
+		sourceColumn: msdyn_wbsduration
+
+		annotation SummarizationSetBy = Automatic
+
+	column msdyn_workhourtemplate
+		dataType: string
+		lineageTag: b205dc90-d8e6-48cd-81b1-7beee8fce8c6
+		summarizeBy: none
+		sourceColumn: msdyn_workhourtemplate
+
+		annotation SummarizationSetBy = Automatic
+
+	column overriddencreatedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8426b049-9c07-4bed-aef5-ee1530c87cba
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: 1bb73b90-9864-4814-b4cf-ce4f0a8ba2c0
+			defaultHierarchy: LocalDateTable_ab185ecb-ee8b-4ef2-889c-ccdfc3bdd622.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownerid
+		dataType: string
+		lineageTag: 3b8d414f-dc94-4885-8b6a-38e1f2ef3e34
+		summarizeBy: none
+		sourceColumn: ownerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningbusinessunit
+		dataType: string
+		lineageTag: 77a4f70e-14f7-4d95-a364-2f446dc14129
+		summarizeBy: none
+		sourceColumn: owningbusinessunit
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningteam
+		dataType: string
+		lineageTag: 97b6920d-c8c3-475c-b55d-a8daced5c0b9
+		summarizeBy: none
+		sourceColumn: owningteam
+
+		annotation SummarizationSetBy = Automatic
+
+	column owninguser
+		dataType: string
+		lineageTag: 76fd6ff9-0b17-4a4b-a946-1f4ba5cbc4d5
+		summarizeBy: none
+		sourceColumn: owninguser
+
+		annotation SummarizationSetBy = Automatic
+
+	column processid
+		dataType: string
+		lineageTag: d2f93026-5a90-4df6-b696-185c64e45ad0
+		summarizeBy: none
+		sourceColumn: processid
+
+		annotation SummarizationSetBy = Automatic
+
+	column stageid
+		dataType: string
+		lineageTag: ae6cb191-0445-4c56-a01c-79c7b4de379e
+		summarizeBy: none
+		sourceColumn: stageid
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 2708154a-0f7f-4a16-a12e-7dd751e9dc04
+		summarizeBy: sum
+		sourceColumn: statecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode_display
+		dataType: string
+		lineageTag: 89d8b94e-3913-460e-994c-8bc846698ad0
+		summarizeBy: none
+		sourceColumn: statecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 9277446a-4cc8-4ca6-94f3-1c0d80968ad5
+		summarizeBy: sum
+		sourceColumn: statuscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode_display
+		dataType: string
+		lineageTag: b3adaf7f-1395-4551-87a3-12d5ecde9ef0
+		summarizeBy: none
+		sourceColumn: statuscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column timezoneruleversionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: d8356510-0437-469c-ae54-bd5d51ddb700
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column transactioncurrencyid
+		dataType: string
+		lineageTag: 3cc5f75f-f106-41b0-a512-d337adfc2105
+		summarizeBy: none
+		sourceColumn: transactioncurrencyid
+
+		annotation SummarizationSetBy = Automatic
+
+	column traversedpath
+		dataType: string
+		lineageTag: 6ead2433-bf7e-43ac-9954-e04166ece8f1
+		summarizeBy: none
+		sourceColumn: traversedpath
+
+		annotation SummarizationSetBy = Automatic
+
+	column utcconversiontimezonecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a0638ee-1078-427c-90e1-dce1e96ff040
+		summarizeBy: sum
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column versionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: cdbd4995-2c3c-425c-8bd3-8d78f58a49cb
+		summarizeBy: sum
+		sourceColumn: versionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	partition msdyn_project-95e82624-904b-464a-98cf-c11fda456a9c = m
+		mode: import
+		source =
+				let
+				    Source = Cds.Entities("https://reisatech.crm2.dynamics.com", null),
+				    entities = Source{[Group="entities"]}[Data],
+				    msdyn_projects = entities{[EntitySetName="msdyn_projects"]}[Data]
+				in
+				    msdyn_projects
+
+	annotation PBI_QueryRelationships = {"columnCount":90,"keyColumnNames":["msdyn_projectid"],"queryRelationships":[],"columnIdentities":["Section1/msdyn_project/msdyn_projects.{createdby,0}","Section1/msdyn_project/msdyn_projects.{createdon,1}","Section1/msdyn_project/msdyn_projects.{createdonbehalfby,2}","Section1/msdyn_project/msdyn_projects.{exchangerate,3}","Section1/msdyn_project/msdyn_projects.{importsequencenumber,4}","Section1/msdyn_project/msdyn_projects.{modifiedby,5}","Section1/msdyn_project/msdyn_projects.{modifiedon,6}","Section1/msdyn_project/msdyn_projects.{modifiedonbehalfby,7}","Section1/msdyn_project/msdyn_projects.{msdyn_actualdurationminutes,8}","Section1/msdyn_project/msdyn_projects.{msdyn_actualend,9}","Section1/msdyn_project/msdyn_projects.{msdyn_actualhours,10}","Section1/msdyn_project/msdyn_projects.{msdyn_actualsales,11}","Section1/msdyn_project/msdyn_projects.{msdyn_actualsales_base,12}","Section1/msdyn_project/msdyn_projects.{msdyn_actualstart,13}","Section1/msdyn_project/msdyn_projects.{msdyn_bulkgenerationstatus,14}","Section1/msdyn_project/msdyn_projects.{msdyn_bulkgenerationstatus_display,15}","Section1/msdyn_project/msdyn_projects.{msdyn_calendarid,16}","Section1/msdyn_project/msdyn_projects.{msdyn_comments,17}","Section1/msdyn_project/msdyn_projects.{msdyn_contractorganizationalunitid,18}","Section1/msdyn_project/msdyn_projects.{msdyn_costconsumption,19}","Section1/msdyn_project/msdyn_projects.{msdyn_costestimateatcomplete,20}","Section1/msdyn_project/msdyn_projects.{msdyn_costestimateatcomplete_base,21}","Section1/msdyn_project/msdyn_projects.{msdyn_costperformence,22}","Section1/msdyn_project/msdyn_projects.{msdyn_costperformence_display,23}","Section1/msdyn_project/msdyn_projects.{msdyn_costvariance,24}","Section1/msdyn_project/msdyn_projects.{msdyn_costvariance_base,25}","Section1/msdyn_project/msdyn_projects.{msdyn_customer,26}","Section1/msdyn_project/msdyn_projects.{msdyn_description,27}","Section1/msdyn_project/msdyn_projects.{msdyn_disablecreateofteammemberformanager,28}","Section1/msdyn_project/msdyn_projects.{msdyn_effortestimateatcompleteeac,29}","Section1/msdyn_project/msdyn_projects.{msdyn_exchangerate,30}","Section1/msdyn_project/msdyn_projects.{msdyn_islinkedtomsprojectclient,31}","Section1/msdyn_project/msdyn_projects.{msdyn_istemplate,32}","Section1/msdyn_project/msdyn_projects.{msdyn_linkeddocumenturl,33}","Section1/msdyn_project/msdyn_projects.{msdyn_overallprojectstatus,34}","Section1/msdyn_project/msdyn_projects.{msdyn_overallprojectstatus_display,35}","Section1/msdyn_project/msdyn_projects.{msdyn_plannedhours,36}","Section1/msdyn_project/msdyn_projects.{msdyn_plannedsales,37}","Section1/msdyn_project/msdyn_projects.{msdyn_plannedsales_base,38}","Section1/msdyn_project/msdyn_projects.{msdyn_progress,39}","Section1/msdyn_project/msdyn_projects.{msdyn_projectid,40}","Section1/msdyn_project/msdyn_projects.{msdyn_projectmanager,41}","Section1/msdyn_project/msdyn_projects.{msdyn_projectresourcerequirementsvisibletore,42}","Section1/msdyn_project/msdyn_projects.{msdyn_projectteamid,43}","Section1/msdyn_project/msdyn_projects.{msdyn_projecttemplate,44}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingcost,45}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingcost_base,46}","Section1/msdyn_project/msdyn_projects.{msdyn_remaininghours,47}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingsales,48}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingsales_base,49}","Section1/msdyn_project/msdyn_projects.{msdyn_salesconsumption,50}","Section1/msdyn_project/msdyn_projects.{msdyn_salesestimateatcompleteeac,51}","Section1/msdyn_project/msdyn_projects.{msdyn_salesestimateatcompleteeac_base,52}","Section1/msdyn_project/msdyn_projects.{msdyn_salesorderid,53}","Section1/msdyn_project/msdyn_projects.{msdyn_salesvariance,54}","Section1/msdyn_project/msdyn_projects.{msdyn_salesvariance_base,55}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduleddurationminutes,56}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduledend,57}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduledstart,58}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduleperformance,59}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduleperformance_display,60}","Section1/msdyn_project/msdyn_projects.{msdyn_schedulevariance,61}","Section1/msdyn_project/msdyn_projects.{msdyn_stagename,62}","Section1/msdyn_project/msdyn_projects.{msdyn_statusupdatedon,63}","Section1/msdyn_project/msdyn_projects.{msdyn_subject,64}","Section1/msdyn_project/msdyn_projects.{msdyn_teamsize,65}","Section1/msdyn_project/msdyn_projects.{msdyn_teamsize_date,66}","Section1/msdyn_project/msdyn_projects.{msdyn_teamsize_state,67}","Section1/msdyn_project/msdyn_projects.{msdyn_totalactualcost,68}","Section1/msdyn_project/msdyn_projects.{msdyn_totalactualcost_base,69}","Section1/msdyn_project/msdyn_projects.{msdyn_totalplannedcost,70}","Section1/msdyn_project/msdyn_projects.{msdyn_totalplannedcost_base,71}","Section1/msdyn_project/msdyn_projects.{msdyn_wbsduration,72}","Section1/msdyn_project/msdyn_projects.{msdyn_workhourtemplate,73}","Section1/msdyn_project/msdyn_projects.{overriddencreatedon,74}","Section1/msdyn_project/msdyn_projects.{ownerid,75}","Section1/msdyn_project/msdyn_projects.{owningbusinessunit,76}","Section1/msdyn_project/msdyn_projects.{owningteam,77}","Section1/msdyn_project/msdyn_projects.{owninguser,78}","Section1/msdyn_project/msdyn_projects.{processid,79}","Section1/msdyn_project/msdyn_projects.{stageid,80}","Section1/msdyn_project/msdyn_projects.{statecode,81}","Section1/msdyn_project/msdyn_projects.{statecode_display,82}","Section1/msdyn_project/msdyn_projects.{statuscode,83}","Section1/msdyn_project/msdyn_projects.{statuscode_display,84}","Section1/msdyn_project/msdyn_projects.{timezoneruleversionnumber,85}","Section1/msdyn_project/msdyn_projects.{transactioncurrencyid,86}","Section1/msdyn_project/msdyn_projects.{traversedpath,87}","Section1/msdyn_project/msdyn_projects.{utcconversiontimezonecode,88}","Section1/msdyn_project/msdyn_projects.{versionnumber,89}"],"ColumnCount":90,"KeyColumnNames":["msdyn_projectid"],"ColumnIdentities":["Section1/msdyn_project/msdyn_projects.{createdby,0}","Section1/msdyn_project/msdyn_projects.{createdon,1}","Section1/msdyn_project/msdyn_projects.{createdonbehalfby,2}","Section1/msdyn_project/msdyn_projects.{exchangerate,3}","Section1/msdyn_project/msdyn_projects.{importsequencenumber,4}","Section1/msdyn_project/msdyn_projects.{modifiedby,5}","Section1/msdyn_project/msdyn_projects.{modifiedon,6}","Section1/msdyn_project/msdyn_projects.{modifiedonbehalfby,7}","Section1/msdyn_project/msdyn_projects.{msdyn_actualdurationminutes,8}","Section1/msdyn_project/msdyn_projects.{msdyn_actualend,9}","Section1/msdyn_project/msdyn_projects.{msdyn_actualhours,10}","Section1/msdyn_project/msdyn_projects.{msdyn_actualsales,11}","Section1/msdyn_project/msdyn_projects.{msdyn_actualsales_base,12}","Section1/msdyn_project/msdyn_projects.{msdyn_actualstart,13}","Section1/msdyn_project/msdyn_projects.{msdyn_bulkgenerationstatus,14}","Section1/msdyn_project/msdyn_projects.{msdyn_bulkgenerationstatus_display,15}","Section1/msdyn_project/msdyn_projects.{msdyn_calendarid,16}","Section1/msdyn_project/msdyn_projects.{msdyn_comments,17}","Section1/msdyn_project/msdyn_projects.{msdyn_contractorganizationalunitid,18}","Section1/msdyn_project/msdyn_projects.{msdyn_costconsumption,19}","Section1/msdyn_project/msdyn_projects.{msdyn_costestimateatcomplete,20}","Section1/msdyn_project/msdyn_projects.{msdyn_costestimateatcomplete_base,21}","Section1/msdyn_project/msdyn_projects.{msdyn_costperformence,22}","Section1/msdyn_project/msdyn_projects.{msdyn_costperformence_display,23}","Section1/msdyn_project/msdyn_projects.{msdyn_costvariance,24}","Section1/msdyn_project/msdyn_projects.{msdyn_costvariance_base,25}","Section1/msdyn_project/msdyn_projects.{msdyn_customer,26}","Section1/msdyn_project/msdyn_projects.{msdyn_description,27}","Section1/msdyn_project/msdyn_projects.{msdyn_disablecreateofteammemberformanager,28}","Section1/msdyn_project/msdyn_projects.{msdyn_effortestimateatcompleteeac,29}","Section1/msdyn_project/msdyn_projects.{msdyn_exchangerate,30}","Section1/msdyn_project/msdyn_projects.{msdyn_islinkedtomsprojectclient,31}","Section1/msdyn_project/msdyn_projects.{msdyn_istemplate,32}","Section1/msdyn_project/msdyn_projects.{msdyn_linkeddocumenturl,33}","Section1/msdyn_project/msdyn_projects.{msdyn_overallprojectstatus,34}","Section1/msdyn_project/msdyn_projects.{msdyn_overallprojectstatus_display,35}","Section1/msdyn_project/msdyn_projects.{msdyn_plannedhours,36}","Section1/msdyn_project/msdyn_projects.{msdyn_plannedsales,37}","Section1/msdyn_project/msdyn_projects.{msdyn_plannedsales_base,38}","Section1/msdyn_project/msdyn_projects.{msdyn_progress,39}","Section1/msdyn_project/msdyn_projects.{msdyn_projectid,40}","Section1/msdyn_project/msdyn_projects.{msdyn_projectmanager,41}","Section1/msdyn_project/msdyn_projects.{msdyn_projectresourcerequirementsvisibletore,42}","Section1/msdyn_project/msdyn_projects.{msdyn_projectteamid,43}","Section1/msdyn_project/msdyn_projects.{msdyn_projecttemplate,44}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingcost,45}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingcost_base,46}","Section1/msdyn_project/msdyn_projects.{msdyn_remaininghours,47}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingsales,48}","Section1/msdyn_project/msdyn_projects.{msdyn_remainingsales_base,49}","Section1/msdyn_project/msdyn_projects.{msdyn_salesconsumption,50}","Section1/msdyn_project/msdyn_projects.{msdyn_salesestimateatcompleteeac,51}","Section1/msdyn_project/msdyn_projects.{msdyn_salesestimateatcompleteeac_base,52}","Section1/msdyn_project/msdyn_projects.{msdyn_salesorderid,53}","Section1/msdyn_project/msdyn_projects.{msdyn_salesvariance,54}","Section1/msdyn_project/msdyn_projects.{msdyn_salesvariance_base,55}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduleddurationminutes,56}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduledend,57}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduledstart,58}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduleperformance,59}","Section1/msdyn_project/msdyn_projects.{msdyn_scheduleperformance_display,60}","Section1/msdyn_project/msdyn_projects.{msdyn_schedulevariance,61}","Section1/msdyn_project/msdyn_projects.{msdyn_stagename,62}","Section1/msdyn_project/msdyn_projects.{msdyn_statusupdatedon,63}","Section1/msdyn_project/msdyn_projects.{msdyn_subject,64}","Section1/msdyn_project/msdyn_projects.{msdyn_teamsize,65}","Section1/msdyn_project/msdyn_projects.{msdyn_teamsize_date,66}","Section1/msdyn_project/msdyn_projects.{msdyn_teamsize_state,67}","Section1/msdyn_project/msdyn_projects.{msdyn_totalactualcost,68}","Section1/msdyn_project/msdyn_projects.{msdyn_totalactualcost_base,69}","Section1/msdyn_project/msdyn_projects.{msdyn_totalplannedcost,70}","Section1/msdyn_project/msdyn_projects.{msdyn_totalplannedcost_base,71}","Section1/msdyn_project/msdyn_projects.{msdyn_wbsduration,72}","Section1/msdyn_project/msdyn_projects.{msdyn_workhourtemplate,73}","Section1/msdyn_project/msdyn_projects.{overriddencreatedon,74}","Section1/msdyn_project/msdyn_projects.{ownerid,75}","Section1/msdyn_project/msdyn_projects.{owningbusinessunit,76}","Section1/msdyn_project/msdyn_projects.{owningteam,77}","Section1/msdyn_project/msdyn_projects.{owninguser,78}","Section1/msdyn_project/msdyn_projects.{processid,79}","Section1/msdyn_project/msdyn_projects.{stageid,80}","Section1/msdyn_project/msdyn_projects.{statecode,81}","Section1/msdyn_project/msdyn_projects.{statecode_display,82}","Section1/msdyn_project/msdyn_projects.{statuscode,83}","Section1/msdyn_project/msdyn_projects.{statuscode_display,84}","Section1/msdyn_project/msdyn_projects.{timezoneruleversionnumber,85}","Section1/msdyn_project/msdyn_projects.{transactioncurrencyid,86}","Section1/msdyn_project/msdyn_projects.{traversedpath,87}","Section1/msdyn_project/msdyn_projects.{utcconversiontimezonecode,88}","Section1/msdyn_project/msdyn_projects.{versionnumber,89}"],"RelationshipInfo":[]}
+
+	annotation PBI_ResultType = Table
+

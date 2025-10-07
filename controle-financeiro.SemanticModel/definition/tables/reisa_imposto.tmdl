@@ -1,0 +1,311 @@
+table reisa_imposto
+	lineageTag: d3bf1d64-a9d8-4c8d-becc-b68e5305c648
+
+	column createdby
+		dataType: string
+		lineageTag: 29bc413c-478a-4ea8-bce3-204eee56227e
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 28f5b9ac-e392-4c46-bce1-745f94ca33e1
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: eec4a6c6-064c-41b7-a039-dfa3bf582621
+			defaultHierarchy: LocalDateTable_9f54c330-2150-4137-9dc3-f07bbb25e8d4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: 45cb9197-e20e-412f-813e-ca6c606662e2
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column exchangerate
+		dataType: double
+		lineageTag: ab9af836-30e4-4912-bea2-59b21570afac
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column importsequencenumber
+		dataType: int64
+		formatString: 0
+		lineageTag: a892f62d-2c15-4d1d-8098-354d8b9b0f8d
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: fa670a40-cd7a-4b3d-a806-86106084e782
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a80df250-f7a7-4e2f-a66c-ca196484e30d
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: de8f0279-5de5-4cb2-9a19-031a53372638
+			defaultHierarchy: LocalDateTable_3b4d4d15-790c-40f4-ba7b-010f14157795.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: 5e357ce2-40bb-4289-863a-a9d94436a224
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column overriddencreatedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8d3b4309-bbe8-4990-a49c-d5993aedca28
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: a3d3a8cb-f5ea-4672-9c72-d7a2bf2a2f52
+			defaultHierarchy: LocalDateTable_3e3d43e5-3572-4b18-a6df-ec24851fb4be.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownerid
+		dataType: string
+		lineageTag: 167f40c4-e633-4a8a-a0ad-afff4584d0da
+		summarizeBy: none
+		sourceColumn: ownerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningbusinessunit
+		dataType: string
+		lineageTag: 5685be4e-c75c-4773-919d-2c60d530b99e
+		summarizeBy: none
+		sourceColumn: owningbusinessunit
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningteam
+		dataType: string
+		lineageTag: 10108f53-ba03-43f3-bc1a-a34732a0616d
+		summarizeBy: none
+		sourceColumn: owningteam
+
+		annotation SummarizationSetBy = Automatic
+
+	column owninguser
+		dataType: string
+		lineageTag: 5e01a234-2738-4571-8586-289b987c056f
+		summarizeBy: none
+		sourceColumn: owninguser
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_aliquota
+		dataType: double
+		lineageTag: 03dafda8-234a-4a33-b766-6d0b0b1be15d
+		summarizeBy: sum
+		sourceColumn: reisa_aliquota
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_basedecalculo
+		dataType: double
+		lineageTag: 28881036-8b10-4ca6-ad53-d1d86989339e
+		summarizeBy: sum
+		sourceColumn: reisa_basedecalculo
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_basedecalculo_base
+		dataType: double
+		lineageTag: 83501883-9c0c-49d6-ba8f-c5712213594a
+		summarizeBy: sum
+		sourceColumn: reisa_basedecalculo_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_contasareceber
+		dataType: string
+		lineageTag: b0b69e79-7646-4202-b013-fdc58d6fab69
+		summarizeBy: none
+		sourceColumn: reisa_contasareceber
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_identificacaodoimposto
+		dataType: int64
+		formatString: 0
+		lineageTag: 52902eb9-8eee-48bd-bcbd-b5ff671a3695
+		summarizeBy: sum
+		sourceColumn: reisa_identificacaodoimposto
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_identificacaodoimposto_display
+		dataType: string
+		lineageTag: a8c85740-0a9f-4cd1-b029-8e8acbccbb40
+		summarizeBy: none
+		sourceColumn: reisa_identificacaodoimposto_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_impostoid
+		dataType: string
+		lineageTag: 8b4e8991-9f62-4997-a38c-4bd872b41d5a
+		summarizeBy: none
+		sourceColumn: reisa_impostoid
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_retido
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d2890909-b637-451a-9e83-78090a3d2e2a
+		summarizeBy: none
+		sourceColumn: reisa_retido
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_titulo
+		dataType: string
+		lineageTag: 193cb2ce-7388-4079-b085-1bd33418b96e
+		summarizeBy: none
+		sourceColumn: reisa_titulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_valordoimposto
+		dataType: double
+		lineageTag: 9839468d-b428-490c-b212-b4fe4485cb96
+		summarizeBy: sum
+		sourceColumn: reisa_valordoimposto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reisa_valordoimposto_base
+		dataType: double
+		lineageTag: bce22270-4469-44a1-ad3c-74543aa1d2d5
+		summarizeBy: sum
+		sourceColumn: reisa_valordoimposto_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column statecode
+		dataType: int64
+		formatString: 0
+		lineageTag: a5ee6e99-55a8-4edf-b46c-97ad08ac168a
+		summarizeBy: sum
+		sourceColumn: statecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode_display
+		dataType: string
+		lineageTag: 00d2e151-1bf5-4d2e-bc32-44aea813cd2c
+		summarizeBy: none
+		sourceColumn: statecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode
+		dataType: int64
+		formatString: 0
+		lineageTag: a218cfd8-87c0-42af-9f9f-cc49f03b285e
+		summarizeBy: sum
+		sourceColumn: statuscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode_display
+		dataType: string
+		lineageTag: 0ea24f24-e1a4-4e78-a2ec-4637fc3af19b
+		summarizeBy: none
+		sourceColumn: statuscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column timezoneruleversionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 0bfbb51f-cb7d-48da-be71-b46854d8d6a2
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column transactioncurrencyid
+		dataType: string
+		lineageTag: 3ae778e5-f94d-4c08-821a-5ddec2b6fab5
+		summarizeBy: none
+		sourceColumn: transactioncurrencyid
+
+		annotation SummarizationSetBy = Automatic
+
+	column utcconversiontimezonecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 5d439b01-316a-4736-a2d8-cc871dce707d
+		summarizeBy: sum
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column versionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 27c3883f-6854-4962-a14c-8525f4abb109
+		summarizeBy: sum
+		sourceColumn: versionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	partition reisa_imposto-5f32a81a-dcbe-4cda-886c-d0eb6c38986f = m
+		mode: import
+		source =
+				let
+				    Source = Cds.Entities("https://reisatech.crm2.dynamics.com", null),
+				    entities = Source{[Group="entities"]}[Data],
+				    reisa_impostos = entities{[EntitySetName="reisa_impostos"]}[Data]
+				in
+				    reisa_impostos
+
+	annotation PBI_QueryRelationships = {"columnCount":32,"keyColumnNames":["reisa_impostoid"],"queryRelationships":[],"columnIdentities":["Section1/reisa_imposto/reisa_impostos.{createdby,0}","Section1/reisa_imposto/reisa_impostos.{createdon,1}","Section1/reisa_imposto/reisa_impostos.{createdonbehalfby,2}","Section1/reisa_imposto/reisa_impostos.{exchangerate,3}","Section1/reisa_imposto/reisa_impostos.{importsequencenumber,4}","Section1/reisa_imposto/reisa_impostos.{modifiedby,5}","Section1/reisa_imposto/reisa_impostos.{modifiedon,6}","Section1/reisa_imposto/reisa_impostos.{modifiedonbehalfby,7}","Section1/reisa_imposto/reisa_impostos.{overriddencreatedon,8}","Section1/reisa_imposto/reisa_impostos.{ownerid,9}","Section1/reisa_imposto/reisa_impostos.{owningbusinessunit,10}","Section1/reisa_imposto/reisa_impostos.{owningteam,11}","Section1/reisa_imposto/reisa_impostos.{owninguser,12}","Section1/reisa_imposto/reisa_impostos.{reisa_aliquota,13}","Section1/reisa_imposto/reisa_impostos.{reisa_basedecalculo,14}","Section1/reisa_imposto/reisa_impostos.{reisa_basedecalculo_base,15}","Section1/reisa_imposto/reisa_impostos.{reisa_contasareceber,16}","Section1/reisa_imposto/reisa_impostos.{reisa_identificacaodoimposto,17}","Section1/reisa_imposto/reisa_impostos.{reisa_identificacaodoimposto_display,18}","Section1/reisa_imposto/reisa_impostos.{reisa_impostoid,19}","Section1/reisa_imposto/reisa_impostos.{reisa_retido,20}","Section1/reisa_imposto/reisa_impostos.{reisa_titulo,21}","Section1/reisa_imposto/reisa_impostos.{reisa_valordoimposto,22}","Section1/reisa_imposto/reisa_impostos.{reisa_valordoimposto_base,23}","Section1/reisa_imposto/reisa_impostos.{statecode,24}","Section1/reisa_imposto/reisa_impostos.{statecode_display,25}","Section1/reisa_imposto/reisa_impostos.{statuscode,26}","Section1/reisa_imposto/reisa_impostos.{statuscode_display,27}","Section1/reisa_imposto/reisa_impostos.{timezoneruleversionnumber,28}","Section1/reisa_imposto/reisa_impostos.{transactioncurrencyid,29}","Section1/reisa_imposto/reisa_impostos.{utcconversiontimezonecode,30}","Section1/reisa_imposto/reisa_impostos.{versionnumber,31}"],"ColumnCount":32,"KeyColumnNames":["reisa_impostoid"],"ColumnIdentities":["Section1/reisa_imposto/reisa_impostos.{createdby,0}","Section1/reisa_imposto/reisa_impostos.{createdon,1}","Section1/reisa_imposto/reisa_impostos.{createdonbehalfby,2}","Section1/reisa_imposto/reisa_impostos.{exchangerate,3}","Section1/reisa_imposto/reisa_impostos.{importsequencenumber,4}","Section1/reisa_imposto/reisa_impostos.{modifiedby,5}","Section1/reisa_imposto/reisa_impostos.{modifiedon,6}","Section1/reisa_imposto/reisa_impostos.{modifiedonbehalfby,7}","Section1/reisa_imposto/reisa_impostos.{overriddencreatedon,8}","Section1/reisa_imposto/reisa_impostos.{ownerid,9}","Section1/reisa_imposto/reisa_impostos.{owningbusinessunit,10}","Section1/reisa_imposto/reisa_impostos.{owningteam,11}","Section1/reisa_imposto/reisa_impostos.{owninguser,12}","Section1/reisa_imposto/reisa_impostos.{reisa_aliquota,13}","Section1/reisa_imposto/reisa_impostos.{reisa_basedecalculo,14}","Section1/reisa_imposto/reisa_impostos.{reisa_basedecalculo_base,15}","Section1/reisa_imposto/reisa_impostos.{reisa_contasareceber,16}","Section1/reisa_imposto/reisa_impostos.{reisa_identificacaodoimposto,17}","Section1/reisa_imposto/reisa_impostos.{reisa_identificacaodoimposto_display,18}","Section1/reisa_imposto/reisa_impostos.{reisa_impostoid,19}","Section1/reisa_imposto/reisa_impostos.{reisa_retido,20}","Section1/reisa_imposto/reisa_impostos.{reisa_titulo,21}","Section1/reisa_imposto/reisa_impostos.{reisa_valordoimposto,22}","Section1/reisa_imposto/reisa_impostos.{reisa_valordoimposto_base,23}","Section1/reisa_imposto/reisa_impostos.{statecode,24}","Section1/reisa_imposto/reisa_impostos.{statecode_display,25}","Section1/reisa_imposto/reisa_impostos.{statuscode,26}","Section1/reisa_imposto/reisa_impostos.{statuscode_display,27}","Section1/reisa_imposto/reisa_impostos.{timezoneruleversionnumber,28}","Section1/reisa_imposto/reisa_impostos.{transactioncurrencyid,29}","Section1/reisa_imposto/reisa_impostos.{utcconversiontimezonecode,30}","Section1/reisa_imposto/reisa_impostos.{versionnumber,31}"],"RelationshipInfo":[]}
+
+	annotation PBI_ResultType = Table
+

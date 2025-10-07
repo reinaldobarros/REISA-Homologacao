@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "controle-financeiro"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6d9b7397-1e19-b647-4d86-c317d257199e"
+  }
+}

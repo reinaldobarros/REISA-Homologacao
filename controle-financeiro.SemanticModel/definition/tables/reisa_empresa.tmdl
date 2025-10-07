@@ -1,0 +1,209 @@
+table reisa_empresa
+	lineageTag: 351fb808-3530-4860-af91-d7baa75421fa
+
+	column createdby
+		dataType: string
+		lineageTag: 31149026-a12e-4759-9097-c3caf070ff73
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 081312b5-471a-483d-93bb-bf21f89bf569
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: a21849d0-025c-43d9-bcf2-88b30a16f664
+			defaultHierarchy: LocalDateTable_45126f2a-99c0-4852-85e2-dca139643533.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: 4e952a4c-757c-467c-a225-a9fa7f2ca527
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column importsequencenumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 935f0a6e-9894-4fb2-bb08-6ea39babd8e3
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: ae8fea55-e172-4122-8386-2bff73619e68
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6fb71487-2633-4bcb-99d7-53edb84821d2
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: ed58eadc-cd5a-45bc-bf50-c8574524b420
+			defaultHierarchy: LocalDateTable_5b97d64b-3d79-46d4-a48f-2058f18d6503.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: f0d00910-a916-4137-82df-bc61a3ca9222
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column overriddencreatedon
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 97548a74-82d9-4955-aa3b-a5e1f2c4aa87
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: 89943176-8d5e-4fa6-920f-e6257014f22e
+			defaultHierarchy: LocalDateTable_95c89da9-ae78-4ce2-8749-6264788cb67c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownerid
+		dataType: string
+		lineageTag: 89e18153-ec28-4408-8dc0-9bf9800a78d2
+		summarizeBy: none
+		sourceColumn: ownerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningbusinessunit
+		dataType: string
+		lineageTag: 4f1771ff-366d-41b6-9a9a-d4f1d0f3859d
+		summarizeBy: none
+		sourceColumn: owningbusinessunit
+
+		annotation SummarizationSetBy = Automatic
+
+	column owningteam
+		dataType: string
+		lineageTag: 83b1ff39-39c6-4da4-bb8a-22a25593a8d1
+		summarizeBy: none
+		sourceColumn: owningteam
+
+		annotation SummarizationSetBy = Automatic
+
+	column owninguser
+		dataType: string
+		lineageTag: 6cb13f87-cc8f-4ed4-8788-19a23ef5d220
+		summarizeBy: none
+		sourceColumn: owninguser
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_empresaid
+		dataType: string
+		lineageTag: 6f4c7183-b3dd-41fb-b283-8d5318e7706d
+		summarizeBy: none
+		sourceColumn: reisa_empresaid
+
+		annotation SummarizationSetBy = Automatic
+
+	column reisa_name
+		dataType: string
+		lineageTag: 2ec3daa4-dbeb-4d41-b6db-489f4291e140
+		summarizeBy: none
+		sourceColumn: reisa_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode
+		dataType: int64
+		formatString: 0
+		lineageTag: 053eed5a-aa25-4ccd-9e7d-87af0852d240
+		summarizeBy: sum
+		sourceColumn: statecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statecode_display
+		dataType: string
+		lineageTag: ddaeeb52-fa27-4245-a4bf-d6ac712175c6
+		summarizeBy: none
+		sourceColumn: statecode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e9f826f-4dde-400e-8f28-9515fbd4b587
+		summarizeBy: sum
+		sourceColumn: statuscode
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscode_display
+		dataType: string
+		lineageTag: 6f6ce336-c974-4939-b3fa-48ba25acd5b8
+		summarizeBy: none
+		sourceColumn: statuscode_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column timezoneruleversionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: b15103d8-8c60-4c79-8fac-7a062b653b5f
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column utcconversiontimezonecode
+		dataType: int64
+		formatString: 0
+		lineageTag: d77cbcdf-b648-472b-bc08-c5c61aaf8a87
+		summarizeBy: sum
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column versionnumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 057777cf-b4d4-4d5f-82c8-1902778c594e
+		summarizeBy: sum
+		sourceColumn: versionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	partition reisa_empresa-6828e089-a026-4e47-ac7f-ec254a102390 = m
+		mode: import
+		source =
+				let
+				    Source = Cds.Entities("https://reisatech.crm2.dynamics.com", null),
+				    entities = Source{[Group="entities"]}[Data],
+				    reisa_empresas = entities{[EntitySetName="reisa_empresas"]}[Data]
+				in
+				    reisa_empresas
+
+	annotation PBI_QueryRelationships = {"columnCount":21,"keyColumnNames":["reisa_empresaid"],"queryRelationships":[],"columnIdentities":["Section1/reisa_empresa/reisa_empresas.{createdby,0}","Section1/reisa_empresa/reisa_empresas.{createdon,1}","Section1/reisa_empresa/reisa_empresas.{createdonbehalfby,2}","Section1/reisa_empresa/reisa_empresas.{importsequencenumber,3}","Section1/reisa_empresa/reisa_empresas.{modifiedby,4}","Section1/reisa_empresa/reisa_empresas.{modifiedon,5}","Section1/reisa_empresa/reisa_empresas.{modifiedonbehalfby,6}","Section1/reisa_empresa/reisa_empresas.{overriddencreatedon,7}","Section1/reisa_empresa/reisa_empresas.{ownerid,8}","Section1/reisa_empresa/reisa_empresas.{owningbusinessunit,9}","Section1/reisa_empresa/reisa_empresas.{owningteam,10}","Section1/reisa_empresa/reisa_empresas.{owninguser,11}","Section1/reisa_empresa/reisa_empresas.{reisa_empresaid,12}","Section1/reisa_empresa/reisa_empresas.{reisa_name,13}","Section1/reisa_empresa/reisa_empresas.{statecode,14}","Section1/reisa_empresa/reisa_empresas.{statecode_display,15}","Section1/reisa_empresa/reisa_empresas.{statuscode,16}","Section1/reisa_empresa/reisa_empresas.{statuscode_display,17}","Section1/reisa_empresa/reisa_empresas.{timezoneruleversionnumber,18}","Section1/reisa_empresa/reisa_empresas.{utcconversiontimezonecode,19}","Section1/reisa_empresa/reisa_empresas.{versionnumber,20}"],"ColumnCount":21,"KeyColumnNames":["reisa_empresaid"],"ColumnIdentities":["Section1/reisa_empresa/reisa_empresas.{createdby,0}","Section1/reisa_empresa/reisa_empresas.{createdon,1}","Section1/reisa_empresa/reisa_empresas.{createdonbehalfby,2}","Section1/reisa_empresa/reisa_empresas.{importsequencenumber,3}","Section1/reisa_empresa/reisa_empresas.{modifiedby,4}","Section1/reisa_empresa/reisa_empresas.{modifiedon,5}","Section1/reisa_empresa/reisa_empresas.{modifiedonbehalfby,6}","Section1/reisa_empresa/reisa_empresas.{overriddencreatedon,7}","Section1/reisa_empresa/reisa_empresas.{ownerid,8}","Section1/reisa_empresa/reisa_empresas.{owningbusinessunit,9}","Section1/reisa_empresa/reisa_empresas.{owningteam,10}","Section1/reisa_empresa/reisa_empresas.{owninguser,11}","Section1/reisa_empresa/reisa_empresas.{reisa_empresaid,12}","Section1/reisa_empresa/reisa_empresas.{reisa_name,13}","Section1/reisa_empresa/reisa_empresas.{statecode,14}","Section1/reisa_empresa/reisa_empresas.{statecode_display,15}","Section1/reisa_empresa/reisa_empresas.{statuscode,16}","Section1/reisa_empresa/reisa_empresas.{statuscode_display,17}","Section1/reisa_empresa/reisa_empresas.{timezoneruleversionnumber,18}","Section1/reisa_empresa/reisa_empresas.{utcconversiontimezonecode,19}","Section1/reisa_empresa/reisa_empresas.{versionnumber,20}"],"RelationshipInfo":[]}
+
+	annotation PBI_ResultType = Table
+

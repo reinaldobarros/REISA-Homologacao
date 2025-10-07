@@ -1,0 +1,61 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["reisa_contasapagar","reisa_contasareceber","reisa_imposto","reisa_empresa","Account","msdyn_project","fluxocaixa"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table reisa_contasapagar
+ref table DateTableTemplate_d0340f13-ffbc-4df5-a465-0de0085a28cb
+ref table LocalDateTable_5674bdc7-f421-4576-9ad9-13a6053c2fab
+ref table LocalDateTable_9089d3a6-0338-4432-a745-93bead4c5c9e
+ref table LocalDateTable_d5f565da-6eb1-4a4c-87bd-d4908fdec0b9
+ref table LocalDateTable_3db88085-eec3-4879-ab47-f4b08bfac815
+ref table LocalDateTable_6d7c3ad9-3dd0-404b-8532-58eb6dd1eb73
+ref table reisa_contasareceber
+ref table LocalDateTable_9a5bf9da-c945-4031-96ad-05e7d23c4b66
+ref table LocalDateTable_b99d71ea-fd37-46d8-a01c-3f5c6b57d533
+ref table LocalDateTable_d91dbb40-4e67-4bee-ab34-54ce0e447e27
+ref table LocalDateTable_e259ffab-1390-4171-a243-2c8cbaf19dde
+ref table reisa_imposto
+ref table LocalDateTable_9f54c330-2150-4137-9dc3-f07bbb25e8d4
+ref table LocalDateTable_3b4d4d15-790c-40f4-ba7b-010f14157795
+ref table LocalDateTable_3e3d43e5-3572-4b18-a6df-ec24851fb4be
+ref table reisa_empresa
+ref table LocalDateTable_45126f2a-99c0-4852-85e2-dca139643533
+ref table LocalDateTable_5b97d64b-3d79-46d4-a48f-2058f18d6503
+ref table LocalDateTable_95c89da9-ae78-4ce2-8749-6264788cb67c
+ref table Account
+ref table LocalDateTable_9b1bb1ed-7e59-4451-ab4f-1a4e147f364e
+ref table LocalDateTable_3fef4d68-0459-443f-a87e-8ff5edb4b7fc
+ref table LocalDateTable_a344e915-5213-4bb4-8d19-a4558876eb25
+ref table LocalDateTable_caa6a3e1-8b7a-493d-8b24-3b246f6e677d
+ref table LocalDateTable_3a6a15df-e0db-4769-b8ab-69043dd305c5
+ref table LocalDateTable_75f44e40-9514-43c8-8c6f-4b084a688c87
+ref table LocalDateTable_3e22bcbf-5f72-4fd8-b1a5-a84aa8a12d7c
+ref table msdyn_project
+ref table LocalDateTable_f4ab87fa-66d8-4b20-8dfc-a22e288bae6f
+ref table LocalDateTable_931b337a-1f80-4041-8c97-0099a2d832d5
+ref table LocalDateTable_805e00cd-42c7-42a5-926e-409cc4b74e61
+ref table LocalDateTable_0596018d-ada2-4743-8dd4-96c877042e63
+ref table LocalDateTable_898a30de-bb21-4290-95db-4a0bb16b180e
+ref table LocalDateTable_76e71c32-0e17-421d-9963-7c4b63b6bf52
+ref table LocalDateTable_ceb698e6-d1e6-4ac0-8918-2e894df62aaa
+ref table LocalDateTable_34154625-85c6-4744-b4f5-8b213027076b
+ref table LocalDateTable_ab185ecb-ee8b-4ef2-889c-ccdfc3bdd622
+ref table LocalDateTable_9bafe736-efdd-4afe-a18b-0e9b690e436b
+ref table LocalDateTable_c75dec74-45c8-4a46-9318-5bd9656b21f8
+ref table LocalDateTable_a3588255-f8be-487f-aab1-d24926aa1a8a
+ref table fluxocaixa
+ref table LocalDateTable_a9cd49c0-bcc5-460b-be72-62680bc54ebf
+ref table LocalDateTable_42d189fa-d806-407b-8d9c-d6a23a724af1
+
+ref cultureInfo en-US
+
